@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>老板能批、HR能落地、员工愿意晒的周末团建</title>
+    <link rel="icon" href="data:,">
+    
+  <style data-inline="site.css">:root {
+  --paper: #fffdf7;
+  --ink: #172024;
+  --muted: #66706b;
+  --line: rgba(23, 32, 36, 0.14);
+  --soft-line: rgba(23, 32, 36, 0.08);
+  --camp-accent: #ee6b2f;
+  --camp-deep: #143d35;
+  --camp-soft: #f4efe5;
+  --race-accent: #d83b2d;
+  --race-deep: #173d59;
+  --race-soft: #eef6fb;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(238, 107, 47, 0.08), transparent 28rem),
+    linear-gradient(180deg, #fffdf7, #f8faf7 46%, #fffdf7);
+}
+
+body.race-theme {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(216, 59, 45, 0.08), transparent 28rem),
+    linear-gradient(180deg, #fbfdff, #f2f7fb 46%, #fbfdff);
+}
+
+a {
+  color: inherit;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 68px;
+  padding: 10px clamp(14px, 4vw, 40px);
+  border-bottom: 1px solid var(--soft-line);
+  background: rgba(255, 253, 247, 0.88);
+  backdrop-filter: blur(18px);
+}
+
+.race-theme .topbar {
+  background: rgba(251, 253, 255, 0.9);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: white;
+  background: linear-gradient(135deg, var(--camp-deep), var(--camp-accent));
+}
+
+.race-theme .brand-mark {
+  background: linear-gradient(135deg, var(--race-deep), var(--race-accent));
+}
+
+.nav-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 0 4px;
+}
+
+.nav-link {
+  flex: 0 0 auto;
+  padding: 9px 11px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: rgba(23, 32, 36, 0.74);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  border-color: var(--line);
+  background: white;
+  color: var(--ink);
+}
+
+.kicker {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 18px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.index-hero,
+.article-hero {
+  position: relative;
+  min-height: min(82svh, 780px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  color: white;
+  background: #0f211d;
+}
+
+.index-hero-media,
+.article-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
+    url("https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-aerial.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.article-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
+    var(--hero-image);
+}
+
+.race-theme .article-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(13, 28, 42, 0.9), rgba(13, 28, 42, 0.48), rgba(13, 28, 42, 0.12)),
+    var(--hero-image);
+}
+
+.index-hero-copy,
+.article-hero-copy {
+  position: relative;
+  width: min(1060px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 0 0 clamp(52px, 10vh, 96px);
+}
+
+.index-hero h1,
+.article-hero h1 {
+  max-width: 1040px;
+  margin: 0;
+  font-size: clamp(38px, 7.2vw, 88px);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.index-hero p,
+.article-hero p {
+  max-width: 740px;
+  margin: 18px 0 0;
+  font-size: clamp(17px, 2vw, 23px);
+  line-height: 1.75;
+}
+
+.primary-action,
+.secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  max-width: 100%;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  font-weight: 900;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.primary-action:hover,
+.secondary-action:hover {
+  transform: translateY(-1px);
+}
+
+.secondary-action {
+  border-color: var(--line);
+  background: white;
+  color: var(--ink);
+}
+
+.index-section {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 92px) 0;
+}
+
+.index-heading {
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+.index-heading h2,
+.index-section h2 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4.8vw, 58px);
+  line-height: 1.08;
+}
+
+.index-heading p,
+.index-section p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.version-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.version-card {
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  text-decoration: none;
+}
+
+.version-card.camp-theme {
+  border-top: 5px solid var(--camp-accent);
+}
+
+.version-card.race-theme {
+  border-top: 5px solid var(--race-accent);
+}
+
+.version-card span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.version-card strong {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.version-card em,
+.version-card small {
+  color: rgba(23, 32, 36, 0.72);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.two-col article,
+.reference-panel {
+  padding: clamp(24px, 4vw, 44px);
+  border-radius: 8px;
+  background: white;
+  border: 1px solid var(--line);
+}
+
+.wechat-article {
+  overflow-x: hidden;
+}
+
+.article-proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-bottom: 1px solid var(--line);
+  background: white;
+}
+
+.article-proof span {
+  min-height: 72px;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  border-right: 1px solid var(--soft-line);
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.article-proof span:last-child {
+  border-right: 0;
+}
+
+.article-intro,
+.article-info-grid,
+.article-body {
+  width: min(820px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.article-intro {
+  padding: clamp(36px, 7vw, 72px) 0 28px;
+}
+
+.article-intro p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.article-intro .summary {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(22px, 3vw, 31px);
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.article-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0 0 clamp(28px, 6vw, 56px);
+}
+
+.race-essentials {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto clamp(34px, 7vw, 64px);
+  padding: clamp(22px, 5vw, 34px);
+  border-radius: 8px;
+  background: #102f46;
+  color: white;
+}
+
+.race-essentials h2 {
+  margin: 0 0 18px;
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 1.15;
+}
+
+.race-essentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.race-essentials article {
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.race-essentials span {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.race-essentials strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.info-card {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: white;
+}
+
+.camp-theme .info-card {
+  box-shadow: inset 0 4px 0 var(--camp-accent);
+}
+
+.race-theme .info-card {
+  box-shadow: inset 0 4px 0 var(--race-accent);
+}
+
+.info-card span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.info-card strong {
+  display: block;
+  margin: 8px 0;
+  font-size: clamp(20px, 3vw, 28px);
+  line-height: 1.22;
+}
+
+.info-card p,
+.article-block p,
+.video-section p,
+.source-facts li,
+.inference-notes li,
+.confirm-list li {
+  color: rgba(23, 32, 36, 0.78);
+  font-size: 17px;
+  line-height: 1.95;
+}
+
+.article-block,
+.video-section,
+.article-figure,
+.source-facts,
+.inference-notes,
+.confirm-list,
+.reference-list,
+.final-cta,
+.article-quote {
+  margin: 0 0 clamp(34px, 7vw, 64px);
+}
+
+.article-block h2,
+.video-section h2,
+.source-facts h2,
+.inference-notes h2,
+.confirm-list h2,
+.reference-list h2,
+.final-cta h2 {
+  position: relative;
+  margin: 0 0 18px;
+  padding-left: 18px;
+  font-size: clamp(26px, 4.6vw, 42px);
+  line-height: 1.18;
+}
+
+.article-block h2::before,
+.video-section h2::before,
+.source-facts h2::before,
+.inference-notes h2::before,
+.confirm-list h2::before,
+.reference-list h2::before,
+.final-cta h2::before {
+  position: absolute;
+  top: 0.16em;
+  bottom: 0.16em;
+  left: 0;
+  width: 5px;
+  border-radius: 999px;
+  content: "";
+  background: var(--camp-accent);
+}
+
+.race-theme .article-block h2::before,
+.race-theme .video-section h2::before,
+.race-theme .source-facts h2::before,
+.race-theme .inference-notes h2::before,
+.race-theme .confirm-list h2::before,
+.race-theme .reference-list h2::before,
+.race-theme .final-cta h2::before {
+  background: var(--race-accent);
+}
+
+.article-block .lead {
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.75;
+}
+
+.article-figure {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #101d1a;
+}
+
+.article-figure img,
+.video-section video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.article-figure figcaption {
+  display: grid;
+  gap: 6px;
+  padding: 16px 18px 18px;
+  color: white;
+}
+
+.article-figure figcaption span {
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.7;
+}
+
+.video-section {
+  padding: 20px;
+  border-radius: 8px;
+  background: #10201c;
+  color: white;
+}
+
+.video-section h2 {
+  color: white;
+}
+
+.video-section p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 124px minmax(0, 1fr);
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.timeline-item span {
+  color: var(--camp-accent);
+  font-weight: 900;
+}
+
+.race-theme .timeline-item span {
+  color: var(--race-accent);
+}
+
+.timeline-item h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.timeline-item p {
+  margin: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--soft-line);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.75;
+}
+
+th {
+  background: var(--camp-soft);
+  font-weight: 900;
+}
+
+.race-theme th {
+  background: var(--race-soft);
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.station-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.station-card {
+  position: relative;
+  overflow: hidden;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(255, 251, 242, 0.9)),
+    white;
+}
+
+.race-theme .station-card {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(240, 247, 251, 0.92)),
+    white;
+}
+
+.station-card::after {
+  position: absolute;
+  top: -38px;
+  right: -34px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  content: "";
+  background: rgba(238, 107, 47, 0.12);
+}
+
+.race-theme .station-card::after {
+  background: rgba(216, 59, 45, 0.12);
+}
+
+.station-card span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--camp-deep);
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.race-theme .station-card span {
+  background: var(--race-deep);
+}
+
+.station-card h3 {
+  margin: 0 0 10px;
+  font-size: clamp(24px, 5vw, 34px);
+  line-height: 1.18;
+}
+
+.station-card p {
+  margin: 0 0 14px;
+}
+
+.station-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.station-card li {
+  position: relative;
+  padding-left: 18px;
+  color: rgba(23, 32, 36, 0.76);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.station-card li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  content: "";
+  background: var(--camp-accent);
+}
+
+.race-theme .station-card li::before {
+  background: var(--race-accent);
+}
+
+.punch-list ul,
+.source-facts ul,
+.inference-notes ul,
+.confirm-list ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.punch-list li,
+.source-facts li,
+.inference-notes li,
+.confirm-list li {
+  position: relative;
+  padding: 14px 16px 14px 44px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid var(--soft-line);
+}
+
+.punch-list li::before,
+.source-facts li::before,
+.inference-notes li::before,
+.confirm-list li::before {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  content: "";
+  background: var(--camp-accent);
+}
+
+.race-theme .punch-list li::before,
+.race-theme .source-facts li::before,
+.race-theme .inference-notes li::before,
+.race-theme .confirm-list li::before {
+  background: var(--race-accent);
+}
+
+.article-quote {
+  padding: clamp(24px, 5vw, 44px);
+  border-left: 8px solid var(--camp-accent);
+  border-radius: 8px;
+  background: white;
+}
+
+.race-theme .article-quote {
+  border-left-color: var(--race-accent);
+}
+
+.article-quote p {
+  margin: 0;
+  font-size: clamp(22px, 3.8vw, 34px);
+  font-weight: 900;
+  line-height: 1.45;
+}
+
+.article-quote cite {
+  display: block;
+  margin-top: 16px;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.faq-block details {
+  border-bottom: 1px solid var(--soft-line);
+  background: white;
+}
+
+.faq-block details:first-of-type {
+  border-top: 1px solid var(--soft-line);
+}
+
+.faq-block summary {
+  cursor: pointer;
+  padding: 18px 0;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.faq-block details p {
+  margin: 0;
+  padding: 0 0 18px;
+}
+
+.source-facts,
+.inference-notes,
+.confirm-list,
+.reference-list,
+.final-cta {
+  padding: clamp(22px, 5vw, 34px);
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.source-facts {
+  background: #ffffff;
+}
+
+.inference-notes {
+  background: var(--camp-soft);
+}
+
+.race-theme .inference-notes {
+  background: var(--race-soft);
+}
+
+.confirm-list {
+  background: #fff6f1;
+}
+
+.race-theme .confirm-list {
+  background: #fff4f3;
+}
+
+.reference-list {
+  background: white;
+}
+
+.reference-list > div {
+  display: grid;
+  gap: 12px;
+}
+
+.reference-list a {
+  display: grid;
+  gap: 5px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--soft-line);
+  text-decoration: none;
+}
+
+.reference-list a span {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.final-cta {
+  background: linear-gradient(135deg, var(--camp-deep), #1f5c4a);
+  color: white;
+}
+
+.race-theme .final-cta {
+  background: linear-gradient(135deg, var(--race-deep), #235f83);
+}
+
+.final-cta p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.final-cta .secondary-action {
+  margin-top: 8px;
+}
+
+.site-footer {
+  padding: 24px clamp(16px, 5vw, 72px);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .index-hero,
+  .article-hero {
+    min-height: 72svh;
+  }
+
+  .index-hero h1,
+  .article-hero h1 {
+    font-size: clamp(34px, 10vw, 58px);
+  }
+
+  .version-board,
+  .two-col,
+  .article-proof,
+  .article-info-grid,
+  .race-essentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-proof span {
+    border-right: 0;
+    border-bottom: 1px solid var(--soft-line);
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    min-width: 620px;
+  }
+
+  .article-figure img,
+  .video-section video {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar {
+    padding-inline: 12px;
+  }
+
+  .index-hero-copy,
+  .article-hero-copy,
+  .index-section,
+  .article-intro,
+  .article-info-grid,
+  .article-body {
+    width: min(100% - 24px, 820px);
+  }
+
+  .primary-action,
+  .secondary-action {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-card,
+  .timeline-item,
+  .source-facts,
+  .inference-notes,
+  .confirm-list,
+  .reference-list,
+  .final-cta,
+  .video-section {
+    border-radius: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .primary-action:hover,
+  .secondary-action:hover {
+    transform: none;
+  }
+}
+</style><meta name="referrer" content="no-referrer"></head>
+  <body data-page="camp-stakeholder" class="camp-theme">
+    <header class="topbar">
+      <a class="brand" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
+      <nav class="nav-scroll" data-nav="" aria-label="六版本页面导航">
+      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-viral.html">
+        露营节传播
+      </a>
+    
+      <a class="nav-link active" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-stakeholder.html">
+        露营节决策
+      </a>
+    
+      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-immersive.html">
+        露营节沉浸
+      </a>
+    
+      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-viral.html">
+        越野赛报名
+      </a>
+    
+      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-stakeholder.html">
+        越野赛合作
+      </a>
+    
+      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-immersive.html">
+        越野赛沉浸
+      </a>
+    </nav>
+    </header>
+    <main data-root="">
+      <article class="wechat-article">
+        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-ridge.jpg')">
+          <div class="article-hero-copy">
+            <span class="kicker">嗨誓三门营地节 | 企业主/HR说服版</span>
+            <h1>老板能批、HR能落地、员工愿意晒的周末团建</h1>
+            <p>一套把采购理由、活动流程、组织收益和现场传播素材都讲清楚的企业团建方案。</p>
+            <a class="primary-action" href="#cta">索取企业团建定制清单，人数、交通、餐饮和游戏可细化</a>
+          </div>
+        </header>
+
+        <section class="article-proof" aria-label="核心亮点">
+          <span>老板看收益</span><span>HR看流程</span><span>员工看体验</span><span>执行方看边界</span>
+        </section>
+
+        
+      <section class="article-info-grid" aria-label="文章信息卡">
+        
+          <article class="info-card">
+            <span>采购理由</span>
+            <strong>一次活动解决三件事</strong>
+            <p>团队共同目标、员工参与意愿、企业文化传播素材。</p>
+          </article>
+        
+          <article class="info-card">
+            <span>组织难度</span>
+            <strong>流程清楚，可分组推进</strong>
+            <p>路线、营地、夜间活动和返程节点明确，容易拆成岗位和时间表。</p>
+          </article>
+        
+          <article class="info-card">
+            <span>可定制</span>
+            <strong>游戏、分组、摄影、客户接待</strong>
+            <p>能服务内部团建，也能服务客户关系维护和管理层共创。</p>
+          </article>
+        
+          <article class="info-card">
+            <span>组织保障</span>
+            <strong>安全、节奏、返程都要前置</strong>
+            <p>体能分层、领队收容、天气预案和夜间管理，是企业团建能否放心出发的关键。</p>
+          </article>
+        
+      </section>
+    
+        
+
+        <div class="article-body">
+          
+        <section class="article-block">
+          <h2>企业为什么要为这类团建买单</h2>
+          <p class="lead">因为它不是把大家带出去玩一天，而是把团队关系重新组织一次。</p>
+          <p>企业团建最难说服的不是员工，而是决策链。老板会问：做完有什么价值？HR 会问：怎么组织才不出问题？员工会问：我为什么要牺牲周末？</p><p>嗨誓三门营地节的答案是把这三类问题放到同一个产品里解决。白天的轻越野给团队一个共同目标，夜晚的营地节给大家一个低压力交流场，清晨的日出和合影给企业留下可传播的内容资产。</p><p>它不是单点娱乐，而是“路线挑战 + 营地社交 + 企业内容资产”的组合。对企业主来说，活动的投入不只换来一天热闹，也换来团队共同经历、内部传播素材和客户关系场景。</p>
+        </section>
+      
+        <section class="article-block">
+          <h2>不同角色看到的价值不同</h2>
+          
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>角色</th><th>最关心的问题</th><th>这场活动的回答</th></tr>
+              </thead>
+              <tbody>
+                
+                  <tr><td>企业主</td><td>钱花得值不值</td><td>有团队目标、有传播素材、有客户接待场景，活动结束后还能沉淀企业文化内容。</td></tr>
+                
+                  <tr><td>HR</td><td>员工愿不愿意参加</td><td>路线有挑战但不硬核，晚间有烧烤、音乐、游戏、星空和日出，参与理由更自然。</td></tr>
+                
+                  <tr><td>行政/采购</td><td>流程能不能落地</td><td>时间节点、集合、路线、营地、返程都有主线，可继续细化为供应商执行清单。</td></tr>
+                
+                  <tr><td>员工</td><td>是不是又被安排</td><td>不是坐着听课，也不是被动破冰，而是一起完成一段路，再进入松弛营地。</td></tr>
+                
+                  <tr><td>客户/伙伴</td><td>是否适合关系维护</td><td>两天一夜的节奏适合慢交流，山顶营地和日出比普通宴请更有记忆点。</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </section>
+      
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-lawn.jpg" alt="山顶草坪营地现场">
+          <figcaption><strong>采购方需要看到真实场地感</strong><span>山顶草坪给团建留下了足够大的活动空间：集合、合影、烧烤、游戏和夜间交流，都能在同一个场域里完成。</span></figcaption>
+        </figure>
+      
+        <section class="article-block station-block">
+          <h2>同一场团建，要同时说服三类人</h2>
+          <p class="lead">企业主、HR 和员工的判断标准不一样，同一场活动要让三类人都找到自己的理由。</p>
+          <div class="station-grid">
+            
+              <article class="station-card">
+                <span>给企业主</span>
+                <h3>不是玩一晚，是换一组团队关系</h3>
+                <p>老板关心投入是否值得，文案要讲共同经历、客户关系、组织士气和内容资产。</p>
+                <ul>
+                  <li>共同目标</li><li>管理层共创</li><li>活动后可沉淀企业文化素材</li>
+                </ul>
+              </article>
+            
+              <article class="station-card">
+                <span>给 HR</span>
+                <h3>不是临时拼活动，是可以拆成执行表</h3>
+                <p>HR 关心落地风险，活动安排要把流程、分组、补给、安全、摄影和返程讲清楚。</p>
+                <ul>
+                  <li>两天一夜流程</li><li>分组和任务</li><li>安全与授权</li>
+                </ul>
+              </article>
+            
+              <article class="station-card">
+                <span>给员工</span>
+                <h3>不是被安排，是愿意发出来</h3>
+                <p>员工关心体验本身，他要先看到山路、烤肉、音乐、星空、日出和朋友感。</p>
+                <ul>
+                  <li>轻越野不劝退</li><li>夜间有松弛社交</li><li>第二天有日出合影</li>
+                </ul>
+              </article>
+            
+          </div>
+        </section>
+      
+        <section class="article-block">
+          <h2>两天一夜怎么组织</h2>
+          <p class="lead">企业最怕活动临时乱，这条线的好处是从行前到返程都有清楚的节点。</p>
+          <div class="timeline">
+            
+              <article class="timeline-item">
+                <span>行前 7-14 天</span>
+                <div>
+                  <h3>锁定人数、体能、交通和分组</h3>
+                  <p>收集参与者基础信息，判断是否需要轻量组、摄影组、客户接待组和后勤保障组。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>周六中午</span>
+                <div>
+                  <h3>抵达三门并完成安全说明</h3>
+                  <p>发放物料、队旗、补给包，说明路线、收容、补给和拍摄点。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>周六 13:00</span>
+                <div>
+                  <h3>从亭旁古城门出发</h3>
+                  <p>按小队出发，设置队长、摄影点和轻任务，例如团队口号、协作打卡、客户结对。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>周六傍晚</span>
+                <div>
+                  <h3>抵达枧星空营地</h3>
+                  <p>完成合影、补给、换装、休整，进入营地晚间活动。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>周六夜间</span>
+                <div>
+                  <h3>烧烤、音乐、才艺和团队游戏</h3>
+                  <p>根据企业目标选择破冰、协作、荣誉、客户互动或轻松社交模块。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>周日清晨</span>
+                <div>
+                  <h3>日出和团队合影</h3>
+                  <p>做整场活动的视觉高潮。提前放好摄影机位和团队标识，照片会更完整。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>周日上午</span>
+                <div>
+                  <h3>早餐、掼蛋、复盘和返程</h3>
+                  <p>用轻社交收尾，午餐后返程，后续交付照片、视频和活动回顾稿。</p>
+                </div>
+              </article>
+            
+          </div>
+        </section>
+      
+        <section class="article-block punch-list">
+          <h2>企业最关心的定制模块</h2>
+          <ul>
+            <li>团队分组机制：按部门混编、项目组对抗、管理层带队或客户结对。</li><li>创意团队游戏：路线任务、营地协作、星空分享、日出承诺卡、团队故事接龙。</li><li>内容资产交付：活动照片、短视频、活动回顾稿、企业文化海报、员工朋友圈图。</li><li>安全保障：领队、收容、补给、医疗、保险、天气预案和夜间营地管理。</li><li>餐饮与营地：烧烤、小吃、烤全羊、早餐、帐篷或住宿、餐饮场地安排。</li><li>交通与返程：上海出发方案、三门当地接驳、返程时间、备选撤离点。</li>
+          </ul>
+        </section>
+      
+        <section class="article-block">
+          <h2>给老板看的不是浪漫，是组织收益</h2>
+          <p class="lead">浪漫是员工愿意参与的理由，组织收益才是企业愿意付费的理由。</p>
+          <p>这场活动最应该被强调的，不是“风景很好”，而是“关系会发生变化”。一群人在办公室里很难自然建立新的协作关系，但在一条共同抵达的路线里，队长、补给、互相等待、抵达后的合影，都会让团队关系变得更真实。</p><p>对新团队，它适合破冰。对成熟团队，它适合年度复盘和士气提升。对有客户关系维护需求的企业，它可以把商务宴请改成更有记忆点的户外共处。对品牌传播，它能产生比会议照更有生命力的素材。</p><p>因此，方案对外沟通时要避免只写“好玩”。更准确的表达是：这是一场能让员工愿意参与、让 HR 容易组织、让企业主看见内容资产的周末团建产品。</p>
+        </section>
+      
+        <section class="article-block faq-block">
+          <h2>采购前需要问清楚的关键问题</h2>
+          
+            <details>
+              <summary>是否适合全员参加？</summary>
+              <p>需要根据员工年龄、体能和健康情况做分层设计。可设置轻量组、保障车、收容点和不参加越野但参加营地的备选方案。</p>
+            </details>
+          
+            <details>
+              <summary>企业能得到什么交付物？</summary>
+              <p>活动流程表、人员分组表、现场照片、短视频、活动回顾稿、员工朋友圈图和可复用团建复盘素材，都可以作为活动后的内容资产。</p>
+            </details>
+          
+            <details>
+              <summary>第一次组织，应该先从哪里开始？</summary>
+              <p>先把参与人数、体能分层、出发城市、预算区间和活动目标列出来。只要这五件事清楚，路线、交通、餐饮、摄影和游戏模块就能继续往下拆。</p>
+            </details>
+          
+        </section>
+      
+          <section id="cta" class="final-cta">
+            <h2>索取企业团建定制清单，人数、交通、餐饮和游戏可细化</h2>
+            <p>把这篇交给老板看价值，交给 HR 看流程，交给团队看现场。三类人都点头，团建才是真的能落地。</p>
+            <a class="secondary-action" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html">返回 6 篇入口</a>
+          </section>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">三门山顶营地，让团队关系在山路、炭火和日出里慢慢升温。</footer>
+    
+    
+  
+
+</body></html>
