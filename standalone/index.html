@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>三门露营团建及越野赛六版本方案</title>
     <link rel="icon" href="data:,">
-    
-  <style data-inline="site.css">:root {
+    <style data-inline="site.css">:root {
   --paper: #fffdf7;
   --ink: #172024;
   --muted: #66706b;
   --line: rgba(23, 32, 36, 0.14);
   --soft-line: rgba(23, 32, 36, 0.08);
   --camp-accent: #ee6b2f;
+  --camp-text-accent: #a74718;
   --camp-deep: #143d35;
   --camp-soft: #f4efe5;
   --race-accent: #d83b2d;
@@ -158,6 +158,18 @@ a {
     var(--hero-image);
 }
 
+body[data-page="camp-viral"] .article-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(7, 18, 14, 0.78), rgba(7, 18, 14, 0.36), rgba(7, 18, 14, 0.08)),
+    var(--hero-image);
+  background-position: center 58%;
+  transform: none;
+}
+
+body[data-page="camp-viral"] .article-hero h1 {
+  white-space: pre-line;
+}
+
 .race-theme .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(13, 28, 42, 0.9), rgba(13, 28, 42, 0.48), rgba(13, 28, 42, 0.12)),
@@ -179,6 +191,7 @@ a {
   font-size: clamp(38px, 7.2vw, 88px);
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .index-hero p,
@@ -559,7 +572,7 @@ a {
 }
 
 .timeline-item span {
-  color: var(--camp-accent);
+  color: var(--camp-text-accent);
   font-weight: 900;
 }
 
@@ -937,6 +950,34 @@ tr:last-child td {
     text-align: center;
   }
 
+  .article-hero h1 {
+    max-width: 360px;
+    font-size: clamp(30px, 8.8vw, 42px);
+    line-height: 1.08;
+  }
+
+  table {
+    min-width: 0;
+  }
+
+  th,
+  td {
+    padding: 14px 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  body[data-page="camp-viral"] .article-hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(7, 18, 14, 0.44), rgba(7, 18, 14, 0.82)),
+      var(--hero-image);
+    background-position: center 62%;
+  }
+
+  .station-card::after {
+    right: 12px;
+  }
+
   .info-card,
   .timeline-item,
   .source-facts,
@@ -959,32 +1000,33 @@ tr:last-child td {
     transform: none;
   }
 }
-</style><meta name="referrer" content="no-referrer"></head>
+</style>
+  </head>
   <body data-page="index">
     <header class="topbar">
-      <a class="brand" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
+      <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
       <nav class="nav-scroll" data-nav="" aria-label="六版本页面导航">
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-viral.html">
-        露营节传播
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-viral.html">
+        山顶团建
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-stakeholder.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-stakeholder.html">
         露营节决策
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-immersive.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-immersive.html">
         露营节沉浸
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-viral.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
         越野赛报名
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-stakeholder.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
         越野赛合作
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-immersive.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
         越野赛沉浸
       </a>
     </nav>
@@ -1005,46 +1047,50 @@ tr:last-child td {
         </div>
         <div class="version-board">
           
-            <a class="version-card camp-theme" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-viral.html">
+            <a class="version-card camp-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-viral.html">
               <span>嗨誓三门营地节</span>
-              <strong>爆款传播版</strong>
-              <em>公司团建别再只吃饭了，带团队去山顶住一晚</em>
-              <small>从亭旁古城门出发，21 公里轻越野抵达枧星空。晚上烧烤、音乐、团队游戏和星空，第二天一起看日出。</small>
+              <strong>山顶团建季</strong>
+              <em>员工最怕团建：
+不是累，是无聊</em>
+              <small>不是又一次饭局，也不是把所有人拉去硬扛越野。这是一场可以分组、补给、收容的两天一夜山顶团建：白天从亭旁古城门出发，晚上在营地烧烤、听音乐、玩游戏，第二天把日出和合影带回公司群。</small>
             </a>
           
-            <a class="version-card camp-theme" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-stakeholder.html">
+            <a class="version-card camp-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-stakeholder.html">
               <span>嗨誓三门营地节</span>
               <strong>企业主/HR说服版</strong>
               <em>老板能批、HR能落地、员工愿意晒的周末团建</em>
               <small>一套把采购理由、活动流程、组织收益和现场传播素材都讲清楚的企业团建方案。</small>
             </a>
           
-            <a class="version-card camp-theme" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-immersive.html">
+            <a class="version-card camp-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-immersive.html">
               <span>嗨誓三门营地节</span>
               <strong>沉浸体验版</strong>
               <em>从古城门跑向星空，第二天在山顶醒来</em>
               <small>先不讲采购逻辑，先让参与者走进那两天一夜：山路、草坪、炭火、音乐、夜空和日出。</small>
             </a>
           
-            <a class="version-card race-theme" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-viral.html">
+            <a class="version-card race-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
               <span>2026 嗨誓三门越野赛</span>
               <strong>报名传播版</strong>
-              <em>2026 年这场三门越野，跑完不急着散场</em>
-              <small>10 公里入门、21 公里初级、41 公里挑战，还有商学院团队两天背靠背。白天跑山海，晚上进营地。</small>
+              <em>三门这场轻越野，
+跑完不急着散场</em>
+              <small>11 / 21 / 33 三种强度，从亭旁古城门出发，跑过风车天路、古村山路和三门山海。不是硬核劝退，而是跑完还能进营地、吃烧烤、和跑友把这个周末聊完。</small>
             </a>
           
-            <a class="version-card race-theme" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-stakeholder.html">
+            <a class="version-card race-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
               <span>2026 嗨誓三门越野赛</span>
               <strong>商学院/合作方版</strong>
-              <em>一场越野赛，为什么值得商学院和合作方提前锁定</em>
-              <small>它不是单场跑步活动，而是连接商学院训练、跑者社群、营地停留和三门文旅传播的赛事化运营样本。</small>
+              <em>老板会批的越野团建，
+不只因为风景好</em>
+              <small>它把 11 / 21 / 33 轻越野、风车古村路线、商学院团队协作和营地露营趣味放进同一个周末。老板看组织收益，队长看执行难度，合作方看文旅传播。</small>
             </a>
           
-            <a class="version-card race-theme" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-immersive.html">
+            <a class="version-card race-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
               <span>2026 嗨誓三门越野赛</span>
-              <strong>跑者沉浸版</strong>
-              <em>D1 跑向营地，D2 再跑回起点</em>
-              <small>真正的训练价值，藏在夜里恢复之后，第二天还能不能重新站到起跑线。</small>
+              <strong>沉浸体验版</strong>
+              <em>从古城门出发，
+晚上在营地碰头</em>
+              <small>先别急着问配速。想象这一天：从亭旁古城门出发，穿过古村和山路，抬头看见风车，傍晚抵达枧星空，晚上坐进露营灯光里。</small>
             </a>
           
         </div>

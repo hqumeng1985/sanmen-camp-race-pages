@@ -69,11 +69,6 @@
         <h2>阅读顺序</h2>
         <p>企业团建先看露营节传播版，判断团队愿不愿意来；赛事报名先看越野赛报名版，判断自己适合哪一组。</p>
       </section>
-      <section class="index-section reference-panel">
-        <h2>新增：6 个 AI 爆款版</h2>
-        <p>保留原 6 篇不变，另做一组更适合公众号和朋友圈传播的多图版本，便于对比首屏、文笔、排版和转发效果。</p>
-        <a class="secondary-action" href="viral-loop/index.html">查看 6 个 AI 爆款版</a>
-      </section>
     `;
   }
 
@@ -98,8 +93,8 @@
         <h2>2026 嗨誓三门越野赛基础信息</h2>
         <div class="race-essentials-grid">
           <article><span>时间地点</span><strong>2026 年 12 月 5-6 日，浙江省台州市三门县</strong></article>
-          <article><span>大众组别</span><strong>10 公里入门组、21 公里初级组、41 公里大众挑战组</strong></article>
-          <article><span>商学院团队组</span><strong>D1 21 公里到枧星空，D2 33 公里从枧星空回亭旁古城门</strong></article>
+          <article><span>距离体系</span><strong>11 公里轻体验、21 公里初级、33 公里挑战</strong></article>
+          <article><span>团队方向</span><strong>商学院、企业队伍和跑团可围绕团队协作与营地停留组织</strong></article>
           <article><span>团队规则</span><strong>10 人一组，至少 2 名女生，女生减时，取每天第六名成绩两天相加</strong></article>
         </div>
       </section>

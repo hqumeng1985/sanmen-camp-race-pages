@@ -2,16 +2,17 @@
 <html lang="zh-CN"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>D1 跑向营地，D2 再跑回起点</title>
+    <title>从古城门出发，晚上在营地碰头</title>
+    <meta name="description" content="2026 嗨誓三门越野赛沉浸体验版：从亭旁古城门出发，跑过风车、古村、山海路线，晚上在枧星空营地碰头。">
     <link rel="icon" href="data:,">
-    
-  <style data-inline="site.css">:root {
+    <style data-inline="site.css">:root {
   --paper: #fffdf7;
   --ink: #172024;
   --muted: #66706b;
   --line: rgba(23, 32, 36, 0.14);
   --soft-line: rgba(23, 32, 36, 0.08);
   --camp-accent: #ee6b2f;
+  --camp-text-accent: #a74718;
   --camp-deep: #143d35;
   --camp-soft: #f4efe5;
   --race-accent: #d83b2d;
@@ -158,6 +159,18 @@ a {
     var(--hero-image);
 }
 
+body[data-page="camp-viral"] .article-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(7, 18, 14, 0.78), rgba(7, 18, 14, 0.36), rgba(7, 18, 14, 0.08)),
+    var(--hero-image);
+  background-position: center 58%;
+  transform: none;
+}
+
+body[data-page="camp-viral"] .article-hero h1 {
+  white-space: pre-line;
+}
+
 .race-theme .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(13, 28, 42, 0.9), rgba(13, 28, 42, 0.48), rgba(13, 28, 42, 0.12)),
@@ -179,6 +192,7 @@ a {
   font-size: clamp(38px, 7.2vw, 88px);
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .index-hero p,
@@ -559,7 +573,7 @@ a {
 }
 
 .timeline-item span {
-  color: var(--camp-accent);
+  color: var(--camp-text-accent);
   font-weight: 900;
 }
 
@@ -937,6 +951,34 @@ tr:last-child td {
     text-align: center;
   }
 
+  .article-hero h1 {
+    max-width: 360px;
+    font-size: clamp(30px, 8.8vw, 42px);
+    line-height: 1.08;
+  }
+
+  table {
+    min-width: 0;
+  }
+
+  th,
+  td {
+    padding: 14px 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  body[data-page="camp-viral"] .article-hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(7, 18, 14, 0.44), rgba(7, 18, 14, 0.82)),
+      var(--hero-image);
+    background-position: center 62%;
+  }
+
+  .station-card::after {
+    right: 12px;
+  }
+
   .info-card,
   .timeline-item,
   .source-facts,
@@ -959,76 +1001,78 @@ tr:last-child td {
     transform: none;
   }
 }
-</style><meta name="referrer" content="no-referrer"></head>
+</style>
+  </head>
   <body data-page="race-immersive" class="race-theme">
     <header class="topbar">
-      <a class="brand" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
+      <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
       <nav class="nav-scroll" data-nav="" aria-label="六版本页面导航">
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-viral.html">
-        露营节传播
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-viral.html">
+        山顶团建
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-stakeholder.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-stakeholder.html">
         露营节决策
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-immersive.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/camp-immersive.html">
         露营节沉浸
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-viral.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
         越野赛报名
       </a>
     
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-stakeholder.html">
+      <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
         越野赛合作
       </a>
     
-      <a class="nav-link active" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-immersive.html">
+      <a class="nav-link active" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
         越野赛沉浸
       </a>
     </nav>
     </header>
     <main data-root="">
       <article class="wechat-article">
-        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/sunrise-pano.jpg')">
+        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-sunrise-1600.jpg')">
           <div class="article-hero-copy">
-            <span class="kicker">2026 嗨誓三门越野赛 | 跑者沉浸版</span>
-            <h1>D1 跑向营地，D2 再跑回起点</h1>
-            <p>真正的训练价值，藏在夜里恢复之后，第二天还能不能重新站到起跑线。</p>
-            <a class="primary-action" href="#cta">把这篇发给队友，开始讨论 2026 团队组怎么组</a>
+            <span class="kicker">2026 嗨誓三门越野赛 | 沉浸体验版</span>
+            <h1>从古城门出发，
+晚上在营地碰头</h1>
+            <p>先别急着问配速。想象这一天：从亭旁古城门出发，穿过古村和山路，抬头看见风车，傍晚抵达枧星空，晚上坐进露营灯光里。</p>
+            <a class="primary-action" href="#cta">把这篇发给想一起去的人，先问一句：今年三门去不去</a>
           </div>
         </header>
 
         <section class="article-proof" aria-label="核心亮点">
-          <span>2026 年 12 月 5-6 日</span><span>浙江台州三门</span><span>10 公里 / 21 公里 / 41 公里</span><span>第六人成绩</span>
+          <span>古城门出发</span><span>风车与古村</span><span>山海路线</span><span>营地露营夜晚</span>
         </section>
 
         
       <section class="article-info-grid" aria-label="文章信息卡">
         
           <article class="info-card">
-            <span>第一天</span>
-            <strong>跑向枧星空</strong>
-            <p>21 公里不是结束，而是第二天再出发前的铺垫。</p>
+            <span>第一幕</span>
+            <strong>从古城门出发</strong>
+            <p>集合、分组、合影和安全说明，把周末从普通出游切到赛事状态。</p>
           </article>
         
           <article class="info-card">
-            <span>夜晚</span>
-            <strong>恢复、补给、社交</strong>
-            <p>营地让队伍在疲劳之后重新组织，而不只是散场。</p>
+            <span>第二幕</span>
+            <strong>跑过风车和古村</strong>
+            <p>路线不只看距离，也看沿途画面：山路、古村、风车和三门山海。</p>
           </article>
         
           <article class="info-card">
-            <span>第二天</span>
-            <strong>从营地回古城门</strong>
-            <p>真正的训练压力，是身体已经疲劳，队伍还要重新启动。</p>
+            <span>第三幕</span>
+            <strong>傍晚抵达营地</strong>
+            <p>跑完不是散场，营地接住补给、聊天、烧烤、小吃和音乐。</p>
           </article>
         
           <article class="info-card">
-            <span>计分</span>
-            <strong>每天第六名</strong>
-            <p>队伍不能只靠最快的人，真正被检验的是整体厚度。</p>
+            <span>第四幕</span>
+            <strong>把人叫到同一个群里</strong>
+            <p>看完先转发给想一起去的人，再讨论 11 / 21 / 33 怎么选。</p>
           </article>
         
       </section>
@@ -1038,8 +1082,8 @@ tr:last-child td {
         <h2>2026 嗨誓三门越野赛基础信息</h2>
         <div class="race-essentials-grid">
           <article><span>时间地点</span><strong>2026 年 12 月 5-6 日，浙江省台州市三门县</strong></article>
-          <article><span>大众组别</span><strong>10 公里入门组、21 公里初级组、41 公里大众挑战组</strong></article>
-          <article><span>商学院团队组</span><strong>D1 21 公里到枧星空，D2 33 公里从枧星空回亭旁古城门</strong></article>
+          <article><span>距离体系</span><strong>11 公里轻体验、21 公里初级、33 公里挑战</strong></article>
+          <article><span>团队方向</span><strong>商学院、企业队伍和跑团可围绕团队协作与营地停留组织</strong></article>
           <article><span>团队规则</span><strong>10 人一组，至少 2 名女生，女生减时，取每天第六名成绩两天相加</strong></article>
         </div>
       </section>
@@ -1048,64 +1092,82 @@ tr:last-child td {
         <div class="article-body">
           
         <section class="article-block">
-          <h2>第一天抵达营地时，你不能把它当终点</h2>
-          <p class="lead">因为第二天早上，队伍还要重新出发。</p>
-          <p>D1 的 21 公里，会让队伍先完成一次抵达。你从亭旁古城门出发，沿三门山野跑向枧星空。傍晚抵达营地，身体会松下来，队友会开始讨论路上谁拉了节奏、谁补给没跟上、谁今天状态最好。</p><p>普通赛事到这里可能就结束了。但商学院团队组不是。营地不是终点，它是恢复站、补给站，也是第二天压力开始之前的心理缓冲区。</p><p>夜晚有烧烤、小吃和音乐，但真正重要的是队伍怎么恢复。谁要早点睡，谁需要拉伸，谁第二天可能掉速，女生减时怎么影响队伍策略，第六人位置该怎么保。这些问题会在营地夜晚变得具体。</p>
+          <h2>13:00，古城门前的热闹会把人拉进状态</h2>
+          <p class="lead">你不是从报名表里进入这场比赛，而是从一群人站到同一个起点开始。</p>
+          <p>亭旁古城门前，队伍集合、分组、合影、确认装备和补给。刚到的时候大家还在刷手机，等队旗立起来、队长开始点人、摄影师让大家靠近一点，周末才真正开始。</p><p>11 公里的人可能第一次试越野，21 公里的人想完整跑到营地，33 公里的人已经在心里算补给和节奏。不同组别站在同一个起点，心态不一样，但目标很接近：一起把三门这条线走完。</p><p>这就是沉浸版要先写的东西。不是规则，而是出发感。</p>
         </section>
       
         <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-night.jpg" alt="三门营地夜晚">
-          <figcaption><strong>夜晚不是放松结束，而是第二天的准备</strong><span>第一天的夜晚不只是放松。对团队组来说，营地也是补给、复盘和第二天重新启动前的安静时间。</span></figcaption>
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-route-hills-1600.jpg" alt="三门山野路线与山顶营地">
+          <figcaption><strong>第一张正文图要可信：先让人看见真实的山海营地</strong><span>首图不靠概念海报，而靠真实路线和营地空间。读者先相信这里能到达，后面的风车、古村和露营夜晚才有代入感。</span></figcaption>
         </figure>
       
         <section class="article-block">
-          <h2>第二天早上，最难的是重新开始</h2>
-          <p class="lead">背靠背的难点不是第二段距离，而是身体已经知道昨天跑过了。</p>
-          <p>周日 8:00，从枧星空出发，跑 33 公里回亭旁古城门。第二天不是重复第一天，而是在疲劳基础上重新管理节奏。你的腿会记得昨天的爬坡，你的胃会记得昨晚吃了什么，你的队友会记得谁需要被照顾。</p><p>这段路的训练意义很清楚：队伍不能只在状态好的时候跑得整齐，还要在睡眠、恢复、补给和情绪都被考验过之后，重新把节奏找回来。</p><p>这就是商学院团队组最像训练赛的地方。它不只考速度，也考队伍是否能在第二天继续有秩序地跑。</p>
+          <h2>路上最好的画面，往往不是冲刺</h2>
+          <p class="lead">是有人回头等了一下，有人在风车下停了两秒，有人进古村时把速度放慢。</p>
+          <p>三门路线适合写成一条移动的画面线：古村、山中古道、风车天路、山海视野、特色补给和营地。它的传播点不是“你一定要跑多快”，而是“这条路值得来一趟”。</p><p>普通户外爱好者会被风景吸引，跑者会关心路线节奏，企业队伍会看见团队协作。一个人喘的时候，另一个人等；有人提醒补水，有人负责拍照。团队感不是口号，是在山路上被看见的动作。</p>
         </section>
       
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-windmill-real.jpg" alt="历届赛事资料中的风车路线画面">
+          <figcaption><strong>风车出现时，朋友圈素材已经有了</strong><span>风车路线是这篇文章的情绪抬升点。它让读者意识到：这场比赛不是只在林道里吃苦，也会有能被拍下来的三门画面。</span></figcaption>
+        </figure>
+      
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-village-real.jpg" alt="历届赛事资料中的古村路线画面">
+          <figcaption><strong>古村让路线慢下来，也让三门被记住</strong><span>古村、石墙和山中古道让赛事有地方感。写沉浸体验时，这类画面要放在中前段，而不是只作为文旅附录。</span></figcaption>
+        </figure>
+      
         <section class="article-block">
-          <h2>从队员视角看两天</h2>
-          <p class="lead">队伍真正要讨论的，不只是报名，而是这两天每个阶段由谁来扛。</p>
+          <h2>把这场文旅轻越野，在脑子里走一遍</h2>
+          <p class="lead">时间线要像公众号，而不是像规程。让读者跟着画面往前走。</p>
           <div class="timeline">
             
               <article class="timeline-item">
-                <span>D1 起跑前</span>
+                <span>出发前</span>
                 <div>
-                  <h3>队伍分工</h3>
-                  <p>确认队长、节奏员、补给提醒、摄影记录和第六人保护策略。</p>
+                  <h3>古城门集合，队伍拍第一张合影</h3>
+                  <p>确认分组、装备和补给，队长把节奏先讲清楚。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
-                <span>D1 路上</span>
+                <span>前半程</span>
                 <div>
-                  <h3>建立节奏</h3>
-                  <p>前半程别冲，后半程看队伍状态。D1 的目标是完整抵达，不是提前透支。</p>
+                  <h3>从城市入口进入山野</h3>
+                  <p>身体开始热起来，队伍从聊天切到呼吸和脚步。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
-                <span>D1 营地</span>
+                <span>中段</span>
                 <div>
-                  <h3>恢复和复盘</h3>
-                  <p>补水、进食、拉伸、睡眠，比多聊一小时更重要。营地社交要服务第二天，而不是消耗第二天。</p>
+                  <h3>风车、古村和山海接连出现</h3>
+                  <p>这不是一条只讲强度的路线，沿途画面会不断提醒你：自己正在三门。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
-                <span>D2 出发</span>
+                <span>傍晚</span>
                 <div>
-                  <h3>重新启动</h3>
-                  <p>用前 5 公里找身体状态，保护队伍第六人，避免第一段就被情绪带快。</p>
+                  <h3>抵达枧星空营地</h3>
+                  <p>跑完的人开始找水、找吃的、找队友，也开始找今晚的座位。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
-                <span>D2 后半程</span>
+                <span>夜晚</span>
                 <div>
-                  <h3>团队厚度</h3>
-                  <p>真正的成绩不在最快的人，而在第六人能否稳定回到亭旁古城门。</p>
+                  <h3>露营灯亮起来</h3>
+                  <p>烧烤、小吃、音乐和聊天接上，比赛从成绩切到关系。</p>
+                </div>
+              </article>
+            
+              <article class="timeline-item">
+                <span>第二天</span>
+                <div>
+                  <h3>清晨、返程或继续挑战</h3>
+                  <p>有的人带着照片返程，有的人继续更长距离或团队训练；不同选择，都从这个营地夜晚分开。</p>
                 </div>
               </article>
             
@@ -1113,96 +1175,108 @@ tr:last-child td {
         </section>
       
         <section class="article-block">
-          <h2>团队组最容易被低估的三个压力点</h2>
-          
+          <h2>普通越野体验 vs 三门沉浸式周末</h2>
+          <p class="lead">沉浸版的重点，是让读者知道“我会经历什么”，而不是只知道“我该准备什么”。</p>
           <div class="table-wrap">
             <table>
               <thead>
-                <tr><th>压力点</th><th>为什么难</th><th>队伍应该提前准备</th></tr>
+                <tr><th>普通体验写法</th><th>三门沉浸写法</th></tr>
               </thead>
               <tbody>
                 
-                  <tr><td>第六人成绩</td><td>不是最快的人决定团队成绩，而是每天第六名决定队伍下限。</td><td>训练时模拟第六人保护，不要只围绕头部选手设计节奏。</td></tr>
+                  <tr><td>路线长度、关门时间、装备清单。</td><td>先写出发、风车、古村、山海、营地和清晨，让读者在脑子里走完。</td></tr>
                 
-                  <tr><td>女生减时</td><td>女生配置和状态会影响团队策略。</td><td>训练中让女生队员参与核心节奏，而不是被动补位。</td></tr>
+                  <tr><td>跑完拿包，成绩截图，回家。</td><td>跑完到营地碰头，吃点东西，等队友，把故事聊完。</td></tr>
                 
-                  <tr><td>夜间恢复</td><td>营地氛围容易让人放松过头，影响 D2 状态。</td><td>规定补给、拉伸、睡眠和第二天装备检查时间。</td></tr>
+                  <tr><td>个人挑战感强，普通朋友难代入。</td><td>11 / 21 / 33 可分层，跑者、朋友、团队都能找到自己的入口。</td></tr>
+                
+                  <tr><td>图片只是说明。</td><td>图片负责带节奏：首图可信，中段路线，后段露营和完赛情绪。</td></tr>
                 
               </tbody>
             </table>
           </div>
         </section>
       
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-camp-night-1600.jpg" alt="三门山顶营地夜景">
+          <figcaption><strong>夜里最重要的不是节目，是终于坐下来</strong><span>露营趣味不是简单加餐。它让跑完的人有地方休整、聊天、等队友，也让团队从一起赶路切换到一起停留。</span></figcaption>
+        </figure>
+      
         <section class="article-block station-block">
-          <h2>冲线后，把游玩模式留给第二天或亲友团</h2>
-          <p class="lead">跑者沉浸版不只写身体感受，也要给队伍和亲友一个赛后去处。</p>
+          <h2>把这篇发给想一起去的人，可以这样说</h2>
+          <p class="lead">沉浸版的传播动作要轻，不硬催报名，先让人愿意一起想象。</p>
           <div class="station-grid">
             
               <article class="station-card">
-                <span>完赛后</span>
-                <h3>亭旁古镇</h3>
-                <p>从起点回到终点，最适合做队伍完赛照、赛后吃饭和故事复盘。</p>
+                <span>发给跑友</span>
+                <h3>这场想不想一起跑</h3>
+                <p>适合发给已经有跑步基础的人。</p>
                 <ul>
-                  <li>队伍统一合影</li><li>补一顿热饭</li><li>把两天背靠背的故事讲完</li>
+                  <li>11 / 21 / 33 可以按状态选。</li><li>有风车和古村，不只是闷头跑。</li><li>晚上到营地等队友。</li>
                 </ul>
               </article>
             
               <article class="station-card">
-                <span>轻打卡</span>
-                <h3>小冰岛 / 骑士的藏宝阁</h3>
-                <p>适合还有精力的队员和亲友团短暂停留，给朋友圈一个更轻的视觉场景。</p>
+                <span>发给户外朋友</span>
+                <h3>不跑很快也能去看风景</h3>
+                <p>适合发给想体验户外但怕硬核的人。</p>
                 <ul>
-                  <li>拍照打卡</li><li>短视频素材</li><li>把赛事内容从赛道延伸到生活方式</li>
+                  <li>先看 11 公里。</li><li>重点是路线和营地。</li><li>正式要求再按官方规程确认。</li>
                 </ul>
               </article>
             
               <article class="station-card">
-                <span>恢复游</span>
-                <h3>天门峡景区</h3>
-                <p>如果队伍计划多留半天，可以把它作为恢复游和三门目的地体验的最后一站。</p>
+                <span>发给团队</span>
+                <h3>我们可以把团建做成一条路线</h3>
+                <p>适合企业队伍或商学院队长转发。</p>
                 <ul>
-                  <li>低强度走走看看</li><li>适合亲友团</li><li>让外地跑者记住三门不只一条赛道</li>
+                  <li>白天协作。</li><li>晚上露营。</li><li>回来有照片和故事。</li>
                 </ul>
               </article>
             
           </div>
         </section>
       
-        <section class="article-block">
-          <h2>这场比赛的故事，不是一个人冲线</h2>
-          <p class="lead">它更像一支队伍在两天里暴露问题，再一起把问题带回终点。</p>
-          <p>跑者都知道，单人能力可以靠训练堆出来，团队默契很难临时补。商学院团队组的价值，正是在两天里让问题提前出现：谁会掉速，谁会补给不及时，谁会睡不好，谁在第二天还能稳定输出。</p><p>这些问题如果出现在正式大赛里，代价很高。如果出现在三门训练赛里，它们会变成队伍下一阶段训练的依据。</p><p>所以这篇对跑者的传播，不应该只写“风景很美”。更应该写清楚：这是一场让队伍知道自己真实水平的两天背靠背。</p>
-        </section>
-      
         <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/sunrise-pano.jpg" alt="三门日出和山野">
-          <figcaption><strong>回到亭旁古城门，才算完成闭环</strong><span>第二天再回到古城门，队伍才真正完成闭环。那一刻，成绩之外的东西也会浮出来。</span></figcaption>
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-sunrise-1600.jpg" alt="三门山顶日出和营地">
+          <figcaption><strong>清晨是整场体验的收束，也是下一次转发的开始</strong><span>公众号结尾需要一个安静但有情绪的画面。清晨、山海、营地和队伍，会把这场赛事从“我跑过”变成“我还想带别人来”。</span></figcaption>
         </figure>
       
         <section class="article-block faq-block">
-          <h2>队伍讨论前先看这几件事</h2>
+          <h2>出发前，普通参与者最想问的事</h2>
           
             <details>
-              <summary>团队组适合什么队伍？</summary>
-              <p>适合有训练目标的商学院跑团、校友会、企业家运动社群，以及为沙赛 / 歌赛 / 争赛准备的队伍。</p>
+              <summary>我不是硬核跑者，会不会被劝退？</summary>
+              <p>先看 11 公里轻体验。三门这场传播重点不是把每个人推到同一强度，而是让不同体能的人都能进入风车、古村、山海和营地这条体验线。</p>
             </details>
           
             <details>
-              <summary>我们现在应该做什么？</summary>
-              <p>先按 10 人一组、至少 2 名女生的规则预组队，建立 D1 / D2 背靠背训练计划。真正到了报名开放的时候，队伍就不是临时拼起来的。</p>
+              <summary>我应该把谁拉进群？</summary>
+              <p>拉三类人：想轻松看风景的人、愿意跑完整 21 公里的人、想挑战 33 公里或团队训练的人。先按目标分清楚，成行率会高很多。</p>
+            </details>
+          
+            <details>
+              <summary>看完这篇下一步做什么？</summary>
+              <p>先把想去的人聚起来，初步判断 11 / 21 / 33 意向。正式报名入口、费用、装备、保险和补给要求，以官方发布为准。</p>
             </details>
           
         </section>
       
+        <section class="article-block">
+          <h2>最后，把问题留给群里</h2>
+          <p class="lead">如果今年只选一场能看风景、能跑路线、能进营地的越野周末，你会选 11、21，还是 33？</p>
+          <p>这不是用来刷评论的空问题，而是帮助队伍自然分层。有人负责体验，有人负责挑战，有人负责组织，有人负责记录。只要大家先进入同一个周末，三门这场就已经开始了。</p>
+        </section>
+      
           <section id="cta" class="final-cta">
-            <h2>把这篇发给队友，开始讨论 2026 团队组怎么组</h2>
-            <p>团队组的训练从转发这篇文章开始。先把 10 个人叫到同一个群里，再谈配速、女生减时、第六人和第二天。</p>
-            <a class="secondary-action" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html">返回 6 篇入口</a>
+            <h2>把这篇发给想一起去的人，先问一句：今年三门去不去</h2>
+            <p>如果你读到这里已经能想象风车、古村、山路和营地灯光，就把这篇发给想一起去的人。先不用急着决定组别，先问一句：今年 12 月，三门去不去？</p>
+            <a class="secondary-action" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html">返回 6 篇入口</a>
           </section>
         </div>
       </article>
     </main>
-    <footer class="site-footer">D1 跑向营地，D2 再跑回起点，团队的真实水平会在第二天出现。</footer>
+    <footer class="site-footer">从亭旁古城门出发，跑过风车和古村，晚上在枧星空营地碰头。</footer>
     
     
   

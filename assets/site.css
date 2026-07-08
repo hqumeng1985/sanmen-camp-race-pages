@@ -160,6 +160,10 @@ body[data-page="camp-viral"] .article-hero::before {
   transform: none;
 }
 
+body[data-page="camp-viral"] .article-hero h1 {
+  white-space: pre-line;
+}
+
 .race-theme .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(13, 28, 42, 0.9), rgba(13, 28, 42, 0.48), rgba(13, 28, 42, 0.12)),
@@ -941,6 +945,7 @@ tr:last-child td {
   }
 
   .article-hero h1 {
+    max-width: 360px;
     font-size: clamp(30px, 8.8vw, 42px);
     line-height: 1.08;
   }
