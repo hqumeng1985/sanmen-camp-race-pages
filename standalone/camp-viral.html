@@ -2,16 +2,17 @@
 <html lang="zh-CN"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>公司团建别再只吃饭了，带团队去山顶住一晚</title>
+    <title>员工最怕的团建，不是累，是无聊</title>
+    <meta name="description" content="嗨誓三门营地节山顶团建季：不是普通饭局，也不是硬核拉练，而是一场可分组、可补给、可收容的两天一夜山顶团建，适合转给今年负责团建的人。">
     <link rel="icon" href="data:,">
-    
-  <style data-inline="site.css">:root {
+    <style data-inline="site.css">:root {
   --paper: #fffdf7;
   --ink: #172024;
   --muted: #66706b;
   --line: rgba(23, 32, 36, 0.14);
   --soft-line: rgba(23, 32, 36, 0.08);
   --camp-accent: #ee6b2f;
+  --camp-text-accent: #a74718;
   --camp-deep: #143d35;
   --camp-soft: #f4efe5;
   --race-accent: #d83b2d;
@@ -158,6 +159,14 @@ a {
     var(--hero-image);
 }
 
+body[data-page="camp-viral"] .article-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(7, 18, 14, 0.78), rgba(7, 18, 14, 0.36), rgba(7, 18, 14, 0.08)),
+    var(--hero-image);
+  background-position: center 58%;
+  transform: none;
+}
+
 .race-theme .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(13, 28, 42, 0.9), rgba(13, 28, 42, 0.48), rgba(13, 28, 42, 0.12)),
@@ -179,6 +188,7 @@ a {
   font-size: clamp(38px, 7.2vw, 88px);
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .index-hero p,
@@ -559,7 +569,7 @@ a {
 }
 
 .timeline-item span {
-  color: var(--camp-accent);
+  color: var(--camp-text-accent);
   font-weight: 900;
 }
 
@@ -937,6 +947,33 @@ tr:last-child td {
     text-align: center;
   }
 
+  .article-hero h1 {
+    font-size: clamp(30px, 8.8vw, 42px);
+    line-height: 1.08;
+  }
+
+  table {
+    min-width: 0;
+  }
+
+  th,
+  td {
+    padding: 14px 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  body[data-page="camp-viral"] .article-hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(7, 18, 14, 0.44), rgba(7, 18, 14, 0.82)),
+      var(--hero-image);
+    background-position: center 62%;
+  }
+
+  .station-card::after {
+    right: 12px;
+  }
+
   .info-card,
   .timeline-item,
   .source-facts,
@@ -959,76 +996,52 @@ tr:last-child td {
     transform: none;
   }
 }
-</style><meta name="referrer" content="no-referrer"></head>
+</style>
+  </head>
   <body data-page="camp-viral" class="camp-theme">
     <header class="topbar">
-      <a class="brand" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
-      <nav class="nav-scroll" data-nav="" aria-label="六版本页面导航">
-      <a class="nav-link active" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-viral.html">
-        露营节传播
-      </a>
-    
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-stakeholder.html">
-        露营节决策
-      </a>
-    
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/camp-immersive.html">
-        露营节沉浸
-      </a>
-    
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-viral.html">
-        越野赛报名
-      </a>
-    
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-stakeholder.html">
-        越野赛合作
-      </a>
-    
-      <a class="nav-link" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/race-immersive.html">
-        越野赛沉浸
-      </a>
-    </nav>
+      <div class="brand"><span class="brand-mark">三</span><span>嗨誓三门营地节</span></div>
     </header>
     <main data-root="">
       <article class="wechat-article">
-        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-aerial.jpg')">
+        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-lawn.jpg')">
           <div class="article-hero-copy">
-            <span class="kicker">嗨誓三门营地节 | 爆款传播版</span>
-            <h1>公司团建别再只吃饭了，带团队去山顶住一晚</h1>
-            <p>从亭旁古城门出发，21 公里轻越野抵达枧星空。晚上烧烤、音乐、团队游戏和星空，第二天一起看日出。</p>
-            <a class="primary-action" href="#cta">把这篇转给负责团建的人，索取企业定制方案</a>
+            <span class="kicker">嗨誓三门营地节 | 山顶团建季</span>
+            <h1>员工最怕的团建，不是累，是无聊</h1>
+            <p>不是又一次饭局，也不是把所有人拉去硬扛越野。这是一场可以分组、补给、收容的两天一夜山顶团建：白天从亭旁古城门出发，晚上在营地烧烤、听音乐、玩游戏，第二天把日出和合影带回公司群。</p>
+            <a class="primary-action" href="#cta">转给今年负责团建的人</a>
           </div>
         </header>
 
         <section class="article-proof" aria-label="核心亮点">
-          <span>21 公里轻越野</span><span>两天一夜山顶营地</span><span>烧烤音乐星空日出</span><span>企业团建可定制</span>
+          <span>不是饭局，是去山顶住一晚</span><span>21 公里不竞速</span><span>可分组可补给可收容</span><span>员工有图可晒</span>
         </section>
 
         
       <section class="article-info-grid" aria-label="文章信息卡">
         
           <article class="info-card">
-            <span>活动定位</span>
-            <strong>轻越野 + 山顶露营 + 团队关系升温</strong>
-            <p>不是硬核赛事，也不是普通农家乐，而是有共同抵达感的周末团建。</p>
+            <span>为什么会被点开</span>
+            <strong>它先戳中团建的真实痛点</strong>
+            <p>大家不是怕出门，是怕又被安排进一场没有记忆点的活动。</p>
           </article>
         
           <article class="info-card">
-            <span>核心路线</span>
-            <strong>亭旁古城门 -&gt; 枧星空</strong>
-            <p>周六 13:00 从台州三门亭旁镇古城门出发，约 21 公里到达山顶营地。</p>
+            <span>为什么会被转发</span>
+            <strong>可以直接转给负责团建的人</strong>
+            <p>文章里有对比、素材包、执行清单和咨询口径，不只是风景展示。</p>
           </article>
         
           <article class="info-card">
-            <span>夜间内容</span>
-            <strong>烧烤、小吃、音乐、游戏、观星</strong>
-            <p>把团队从工作群拉回真实现场，让聊天、合影和合作自然发生。</p>
+            <span>员工为什么愿晒</span>
+            <strong>白天有路，晚上有营地，清晨有日出</strong>
+            <p>这类素材比包厢合照更像一段真的周末，也更容易发到朋友圈。</p>
           </article>
         
           <article class="info-card">
-            <span>第二天</span>
-            <strong>日出、早餐、掼蛋、午餐后返程</strong>
-            <p>周日 5:00 看日出，早餐后轻社交，午餐后回沪。</p>
+            <span>HR 为什么敢组织</span>
+            <strong>不竞速，可分组，可收容</strong>
+            <p>21 公里保留挑战感，但不把所有人推到同一种强度里。</p>
           </article>
         
       </section>
@@ -1038,92 +1051,172 @@ tr:last-child td {
         <div class="article-body">
           
         <section class="article-block">
-          <h2>为什么这场团建会被转发</h2>
-          <p class="lead">因为它一句话就能讲清楚，又有足够多的画面可以让人愿意点开。</p>
-          <p>很多团建的问题不是预算不够，而是缺少一个让员工愿意参与的理由。会议室破冰、酒店晚宴、半天拓展，流程都能做完，但第二天回到公司，大家很快忘掉。</p><p>嗨誓三门营地节的传播点更直接：下午从古城门出发，团队一起走一段山路，傍晚抵达山顶草坪，夜里吃烤肉、听音乐、玩团队游戏、看星空，第二天一起等日出。它不是一句“增强凝聚力”的口号，而是一套能被照片和视频证明的共同经历。</p><p>对 HR 来说，这种活动很容易在公司内部被理解。对员工来说，它不像被安排去完成任务，更像终于有一次可以离开办公桌、和同事一起完成一段小冒险。对企业主来说，它能沉淀团队照片、企业文化素材和客户关系场景。</p>
+          <h2>很多人不是讨厌团建，是讨厌没记忆点</h2>
+          <p class="lead">饭桌、包厢、破冰游戏、统一合影。流程都完成了，但第二天没人想再提。</p>
+          <p>团建通知一发，大家先问“能不能不去”，往往不是因为员工不合群，而是活动没有给出一个值得出发、值得拍照、值得回来说的理由。</p><p>三门山顶团建的不同在这里：不是把人换到另一张饭桌，而是让团队从亭旁古城门出发，分组走向枧星空山顶营地。白天一起完成一段路，晚上一起坐下来烧烤、听音乐、玩游戏，第二天把日出和合影带回公司群。</p><p>21 公里听起来吓人，但这不是专业竞速。企业团建可以按体能分组，设置补给、收容和轻量参与方案；能走的人完成路线，不适合全程的人也可以参与关键节点、营地和夜间活动。</p><p>所以这篇不只是给 HR 的方案介绍。它也可以直接转给今年负责团建的人：看看一场让员工愿意发朋友圈的团建，应该长什么样。</p>
         </section>
       
         <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-aerial.jpg" alt="山顶营地航拍">
-          <figcaption><strong>第一张图就要让人想去</strong><span>远处是山，近处是草坪和营地。团建最重要的第一眼，是让人相信这里真的值得出发。</span></figcaption>
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-lawn.jpg" alt="三门山顶露营草坪和露营舱">
+          <figcaption><strong>先看真实营地：这不是概念图，是可以落地的山顶场地</strong><span>山顶草坪、露营舱、远山和山谷铺开以后，集合、休整、合影、晚餐和夜间活动都有了明确场地。团建不再是把人关进包厢，而是把团队带到一个可以走动、聊天、拍照、坐下来的地方。</span></figcaption>
         </figure>
       
+        <section class="article-block">
+          <h2>普通饭局团建 vs 三门山顶团建</h2>
+          <p class="lead">为什么这篇更适合转发？因为差异不是“吃什么”，而是团队有没有共同经历。</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>普通饭局团建</th><th>三门山顶两天一夜</th></tr>
+              </thead>
+              <tbody>
+                
+                  <tr><td>通知发出后，员工先想能不能不去。</td><td>通知发出后，员工先问山顶、烧烤、日出怎么安排。</td></tr>
+                
+                  <tr><td>现场主要靠主持人和游戏撑气氛。</td><td>白天同行、晚上围坐、清晨合影，气氛由共同经历带出来。</td></tr>
+                
+                  <tr><td>照片多是包厢合照和桌面菜品。</td><td>素材有山路、营地、夜景、日出、团队合影和活动回顾。</td></tr>
+                
+                  <tr><td>HR 做完流程，活动很快结束。</td><td>HR 能沉淀执行清单、朋友圈素材、企业文化回顾和下一次活动经验。</td></tr>
+                
+                  <tr><td>老板看到的是一笔聚餐预算。</td><td>老板看到的是团队关系、内容资产和一次能被记住的周末。</td></tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </section>
+      
         <section class="article-block station-block">
-          <h2>三张图，讲完一次山顶团建</h2>
-          <p class="lead">好的团建不怕被拍下来。第一眼看见目的地，中段看见大家真的在玩，结尾看见一起留下的记忆。</p>
+          <h2>员工朋友圈素材包，直接拿去发</h2>
+          <p class="lead">下面不是假装真实评价，而是发布前可以准备好的员工转发文案和素材方向。</p>
           <div class="station-grid">
             
               <article class="station-card">
-                <span>第一张</span>
-                <h3>山顶营地航拍</h3>
-                <p>读者先判断值不值得点开。大场景让人立刻知道这不是普通饭局团建。</p>
+                <span>员工朋友圈</span>
+                <h3>今年团建终于不是饭局了</h3>
+                <p>适合配山顶营地、夜景、日出或小队合影。</p>
                 <ul>
-                  <li>放在首屏</li><li>配强标题</li><li>突出山顶、草坪和目的地感</li>
+                  <li>我们真的一起走到山顶住了一晚。</li><li>白天走路，晚上烧烤，第二天看日出。</li><li>21 公里没有想象中可怕，因为不是比赛，是一群人一起抵达。</li>
                 </ul>
               </article>
             
               <article class="station-card">
-                <span>第二张</span>
-                <h3>烧烤、音乐和团队游戏</h3>
-                <p>读者会问去了之后做什么。过程图负责回答“不是只走路，也不是只拍照”。</p>
+                <span>HR 转老板</span>
+                <h3>这不是单纯出去玩</h3>
+                <p>适合放进沟通群，解释活动为什么值得做。</p>
                 <ul>
-                  <li>放在流程中段</li><li>配合时间线</li><li>强化关系升温和员工参与感</li>
+                  <li>路线、分组、补给、收容、餐饮、住宿和返程都能拆成执行清单。</li><li>活动结束后能留下照片、短视频、团队故事和公众号回顾。</li><li>员工愿意晒，企业也有内容可沉淀。</li>
                 </ul>
               </article>
             
               <article class="station-card">
-                <span>第三张</span>
-                <h3>日出与团队合影</h3>
-                <p>文章结尾需要一个能被转发的记忆点，让 HR 和员工都觉得这趟值得。</p>
+                <span>短视频开头</span>
+                <h3>3 秒先给冲突</h3>
+                <p>适合做活动预热视频或公众号首图下方短视频文案。</p>
                 <ul>
-                  <li>放在行动引导前</li><li>适合企业文化墙</li><li>适合朋友圈转发</li>
+                  <li>别再问团建去哪吃饭了。</li><li>这次，我们把团队带去山顶住一晚。</li><li>从古城门出发，到日出合影结束。</li>
                 </ul>
               </article>
             
           </div>
         </section>
       
+        <section class="article-block punch-list">
+          <h2>这张执行清单，可以直接转给今年负责团建的人</h2>
+          <ul>
+            <li>体能分层：21 公里保留挑战感，但按企业团建组织，不做硬核竞速，可设置轻量参与和营地参与方案。</li><li>队伍分组：按部门混编、小队长带队、摄影点打卡、补给提醒和收尾陪同行动，让慢的人也有人照应。</li><li>安全节奏：行前说明路线、天气、装备和身体情况，现场设置补给、收容和应急沟通机制。</li><li>交通返程：先确认出发城市、集合时间、返程节点和是否需要三门当地接驳，再细化车辆与人员安排。</li><li>餐饮住宿：烧烤、小吃、早餐和住宿形态按人数、档期和预算细化，确认后写进正式方案。</li><li>内容交付：提前规划合影、短视频、活动回顾和员工朋友圈素材，让活动结束后还能继续传播。</li>
+          </ul>
+        </section>
+      
+        <section class="article-block station-block">
+          <h2>一场好团建，要让三类人都点头</h2>
+          <p class="lead">员工看体验，HR 看组织，老板看价值。只讲风景不够，只讲流程也不够。</p>
+          <div class="station-grid">
+            
+              <article class="station-card">
+                <span>给员工</span>
+                <h3>终于不是又一次饭局</h3>
+                <p>白天有路，晚上有营地，第二天有日出。活动先变得值得参加，大家才愿意出发。</p>
+                <ul>
+                  <li>山路同行</li><li>烧烤音乐</li><li>日出合影</li>
+                </ul>
+              </article>
+            
+              <article class="station-card">
+                <span>给 HR</span>
+                <h3>不是临时拼节目，是一张执行表</h3>
+                <p>集合、分组、补给、收容、交通、餐饮、住宿、摄影和返程都能拆成节点。</p>
+                <ul>
+                  <li>可分组</li><li>可补给</li><li>可收容</li>
+                </ul>
+              </article>
+            
+              <article class="station-card">
+                <span>给老板</span>
+                <h3>不是玩一晚，是留下团队资产</h3>
+                <p>共同路线、现场照片、短视频和活动回顾，能变成企业文化素材和团队共同记忆。</p>
+                <ul>
+                  <li>团队关系</li><li>传播素材</li><li>文化沉淀</li>
+                </ul>
+              </article>
+            
+          </div>
+        </section>
+      
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-aerial.jpg" alt="三门山顶营地航拍">
+          <figcaption><strong>营地展开在山脊上，团队也有了活动空间</strong><span>从上空看，露营舱沿着草坪铺开，山路从林间延伸进来。白天的路线、傍晚的抵达、夜晚的围坐和第二天的合影，都能在这里自然接上。</span></figcaption>
+        </figure>
+      
         <section class="article-block">
-          <h2>两天一夜怎么过</h2>
-          <p class="lead">这个行程最好看的地方，是它从下午、夜晚到清晨都有记忆点。</p>
+          <h2>两天一夜怎么走，HR 一眼能看懂</h2>
+          <p class="lead">这条线不是把人丢到山里，而是从集合、分组、同行、抵达、晚间活动到返程，每一步都能落成执行节点。</p>
           <div class="timeline">
+            
+              <article class="timeline-item">
+                <span>行前</span>
+                <div>
+                  <h3>确认人数、体能、交通和预算区间</h3>
+                  <p>先收集参与者基础信息，判断是否需要轻量组、营地组、摄影组、后勤组和客户接待组。</p>
+                </div>
+              </article>
             
               <article class="timeline-item">
                 <span>周六 13:00</span>
                 <div>
                   <h3>亭旁古城门集合出发</h3>
-                  <p>从“红旗第一飘”台州三门亭旁镇古城门出发。企业可以按部门、项目组或跨部门混编分组。</p>
+                  <p>完成分组、合影、安全说明和补给提醒，用一个有仪式感的起点把团队从工作日切换出来。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
                 <span>周六下午</span>
                 <div>
-                  <h3>21 公里轻越野前往枧星空</h3>
-                  <p>强度不按专业比赛设计，重点是共同完成。途中可以设置补给、拍摄点、队旗合影和轻任务。</p>
+                  <h3>21 公里非竞速轻越野前往枧星空</h3>
+                  <p>按小队节奏前进，不以成绩排名为目标。快慢组、补给点、收容方案和同行机制一起设计，普通员工也能找到参与方式。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
-                <span>周六 18:00 左右</span>
+                <span>周六傍晚</span>
                 <div>
-                  <h3>营地烧烤和团队晚会</h3>
-                  <p>烧烤、小吃、音乐、才艺、团队游戏接上。适合做年度团队主题、客户答谢或核心团队共创。</p>
+                  <h3>抵达山顶营地并休整</h3>
+                  <p>草坪、露营舱、灯光和山风接住白天的疲惫。团队换装、补给、合影，进入夜间活动状态。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
                 <span>周六夜间</span>
                 <div>
-                  <h3>观星和冥想</h3>
-                  <p>把节奏放慢，让团队从“完成任务”切换到“坐下来聊天”。这是关系升温最自然的时间。</p>
+                  <h3>烧烤、音乐、团队游戏</h3>
+                  <p>炭火、小吃、音乐、才艺和团队游戏接上，让团队从完成路线切换到坐下来聊天。</p>
                 </div>
               </article>
             
               <article class="timeline-item">
-                <span>周日 05:00</span>
+                <span>周日清晨</span>
                 <div>
-                  <h3>一起看日出</h3>
+                  <h3>一起看日出并拍团队合影</h3>
                   <p>日出是整场活动最强的合影时刻，也是朋友圈、企业文化墙和活动回顾最容易出片的场景。</p>
                 </div>
               </article>
@@ -1131,69 +1224,95 @@ tr:last-child td {
               <article class="timeline-item">
                 <span>周日上午</span>
                 <div>
-                  <h3>早餐、掼蛋、午餐后返程</h3>
-                  <p>用轻松的棋牌社交收尾，午餐后回沪，保留周末活动的完整性。</p>
+                  <h3>早餐、轻社交和返程</h3>
+                  <p>用早餐、掼蛋或轻复盘收尾，再按交通安排返程，让团队带着松弛状态回到工作日。</p>
                 </div>
               </article>
             
           </div>
         </section>
       
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/ai-camp-viral-1600.jpg" alt="团队抵达山顶营地氛围">
+          <figcaption><strong>团队真正需要的，是一段一起抵达的过程</strong><span>一群人一起走到山顶以后，关系会自然松动：有人等同伴，有人拍合影，有人把工作消息放到一边。团建的变化，往往就发生在这些不被安排的细节里。</span></figcaption>
+        </figure>
+      
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-night.jpg" alt="三门山顶营地夜景">
+          <figcaption><strong>灯亮起来以后，山顶变成团队的客厅</strong><span>月亮升起来，营地灯光亮起来，山谷慢慢暗下去。这个时候，团建不再靠主持人推动，而是靠炭火、音乐、笑声和坐在一起的人。</span></figcaption>
+        </figure>
+      
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/ai-camp-bbq-1600.jpg" alt="山顶营地烧烤音乐和团队游戏氛围">
+          <figcaption><strong>烧烤、音乐和游戏，把气氛真正热起来</strong><span>白天一起走过路，晚上再一起坐下来吃东西、听音乐、玩游戏。很多平时没机会说的话，会在这个时候自然发生。</span></figcaption>
+        </figure>
+      
         <section class="article-block">
-          <h2>这不是把员工拉去吃一顿饭</h2>
-          <p class="lead">它的核心价值在于：团队先共同完成一段路线，再进入松弛的营地场景。</p>
-          <p>如果只是吃饭，大家会按熟人关系坐在一起。如果只是拓展，很多人会觉得自己在被安排。三门这条动线的好处，是先给团队一个共同目标：从古城门抵达山顶营地。</p><p>抵达之后，晚上的烧烤、音乐和游戏才有了情绪基础。大家不是突然被要求“破冰”，而是刚刚一起走完一段路，天然有话题、有互相照顾、有共同回忆。</p><p>对年轻员工，它有分享价值。对管理层，它有组织价值。对企业品牌，它有素材价值。三者同时成立，才是这场营地节适合传播的原因。</p>
+          <h2>21 公里为什么不必劝退员工</h2>
+          <p class="lead">关键不在距离本身，而在组织方式：企业团建不能按硬核赛事来做。</p>
+          <p>如果把 21 公里写成“所有人必须硬走完”，它当然会劝退。正确的打开方式，是把它设计成团队共同抵达的主线，而不是个人成绩排名。</p><p>企业可以提前做体能分层：核心组完成完整路线，轻量组参与部分路段或营地活动，摄影和后勤角色参与关键节点。这样既保留山顶抵达的仪式感，也不会把普通员工挡在活动外。</p><p>这条路线真正有价值的地方，是它给团队制造了自然协作：有人带队，有人等同伴，有人提醒补给，有人负责拍照，有人把最后一个人带到营地。这样的细节，比会议室里的破冰游戏更容易被记住。</p>
         </section>
       
         <blockquote class="article-quote">
-          <p>真正好转发的团建，不是把活动说得多高级，而是员工看完第一屏就会说：这个我愿意去。</p>
-          <cite>传播版核心判断</cite>
+          <p>真正被记住的团建，不是把流程排得多满，而是大家回去以后还能说起同一段路、同一顿晚餐、同一个日出。</p>
+          <cite>嗨誓三门营地节</cite>
         </blockquote>
       
         <section class="article-block punch-list">
-          <h2>适合哪些团队直接转发给老板看</h2>
+          <h2>什么样的团队，最适合来这里</h2>
           <ul>
-            <li>年度团建已经做腻了酒店和拓展，想换一个更有记忆点的团队。</li><li>公司希望做客户关系维护、核心团队共创或管理层周末活动。</li><li>HR 需要一套员工愿意晒、老板能看懂价值、组织方能落地的活动。</li><li>企业希望活动结束后能留下图片、视频、合影、短片和企业文化素材。</li><li>团队里有一部分人喜欢户外，但又不能把活动做成硬核越野赛。</li>
+            <li>年度团建已经做腻了酒店、饭局和半天拓展，想换一个更有记忆点。</li><li>团队需要一次真正离开办公室的共同经历，而不是又一场流程化活动。</li><li>公司希望把团建做成企业文化素材，而不是只留下一张合照。</li><li>团队里有人喜欢户外，但活动又不能做成劝退普通员工的硬核越野。</li><li>企业想把客户接待、核心团队共创或管理层周末活动做得更有新鲜感。</li><li>HR 希望提前看到安全、交通、餐饮、住宿、摄影和返程安排，而不是临到活动前再补漏洞。</li>
           </ul>
         </section>
       
+        <figure class="article-figure">
+          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/sunrise-pano.jpg" alt="三门山顶营地日出">
+          <figcaption><strong>第二天清晨，把这趟团建留成一张合影</strong><span>日出从山谷那边升起来，营地还带着夜里的安静。团队一起看见这个清晨，这趟周末就不只是活动流程，而是一段可以被反复提起的共同记忆。</span></figcaption>
+        </figure>
+      
         <section class="article-block">
-          <h2>如果你还在问团建去哪吃饭</h2>
-          <p class="lead">先把问题换掉。不要问去哪吃饭，问团队愿不愿意一起走到山顶。</p>
-          <p>不要再问团建去哪吃饭了。问问团队：愿不愿意一起从古城门出发，走到山顶，看一场星空和日出。</p><p>这不是一场以成绩为目标的越野赛，也不是一次只负责拍照打卡的露营。它更像一个周末版团队关系实验：一起出发，一起抵达，一起坐下来吃烧烤，再一起等第二天的太阳升起来。</p><p>如果你的团队正在找一种更自然、更有画面、更容易被员工记住的团建方式，三门这场营地节值得放进备选清单。</p>
+          <h2>如果今年只安排一次团建，先问一个问题</h2>
+          <p class="lead">你们团队更需要一顿饭，还是一次能被大家记住的周末？</p>
+          <p>如果答案还是“吃饭也行”，那就继续订餐厅。如果你希望大家回去以后还能主动说起这次活动，那就把团建从饭桌搬到山顶。</p><p>这不是一场以成绩为目标的越野赛，也不是一次只负责拍照打卡的露营。它更像一个周末版团队关系实验：一起出发，一起抵达，一起坐下来吃烧烤，再一起等第二天的太阳升起来。</p><p>也欢迎把这个问题丢进公司群：你们公司上一次让人愿意参加、愿意拍照、愿意转发的团建是什么？</p>
         </section>
       
         <section class="article-block faq-block">
-          <h2>转发前最常被问到的问题</h2>
+          <h2>出发前，HR 最关心的几件事</h2>
           
             <details>
               <summary>员工没有越野经验可以参加吗？</summary>
-              <p>这是一场企业团建轻越野，不是专业竞速赛事。组织时可以按体能分组，设置补给、收容和轻量参与方案，让更多人能舒服地加入。</p>
+              <p>可以按企业团建方式设计，而不是按专业竞速方式组织。咨询时会先确认年龄、体能和健康情况，再设置分组、补给、收容和轻量参与方案。</p>
+            </details>
+          
+            <details>
+              <summary>21 公里会不会太难？</summary>
+              <p>难度要靠组织方式消化。完整路线适合愿意挑战的小队，普通员工可以通过轻量路段、营地任务、摄影后勤或夜间活动参与，不需要把所有人都推到同一种强度里。</p>
             </details>
           
             <details>
               <summary>晚上是不是只有烧烤？</summary>
-              <p>不是。晚上有烧烤、小吃、音乐、才艺表演、团队游戏、观星和冥想。企业还可以按目标加入破冰、协作、客户互动和主题分享。</p>
+              <p>不是。晚上可以围绕烧烤、小吃、音乐、才艺、团队游戏、观星和轻分享展开；如果企业有客户接待、核心团队共创或管理层交流需求，也可以把夜间内容做成更明确的主题。</p>
             </details>
           
             <details>
-              <summary>怎么把它变成公司活动？</summary>
-              <p>先确定人数、出发城市、参与者体能和希望达成的团队目标，再把路线、分组、餐饮、摄影和返程安排做成一张执行表。越早确认意向，越容易把周末档期和营地资源排出来。</p>
+              <summary>安全、保险和应急怎么处理？</summary>
+              <p>正式方案里需要逐项确认路线说明、天气预案、补给、收容、医疗协助、保险安排和夜间营地管理。进入执行清单后，一项项确认并落到对应负责人。</p>
+            </details>
+          
+            <details>
+              <summary>咨询时需要提供什么？</summary>
+              <p>先提供人数、出发城市、预算区间、预计日期、参与者体能和活动目标。我们再把路线、交通、餐饮、住宿、摄影、安全保障和返程安排拆成可执行方案。</p>
             </details>
           
         </section>
       
           <section id="cta" class="final-cta">
-            <h2>把这篇转给负责团建的人，索取企业定制方案</h2>
-            <p>如果你的团队今年还缺一次真正有记忆点的周末，把这篇先发到群里。愿意一起走到山顶的人，通常就是活动最好的开始。</p>
-            <a class="secondary-action" href="https://htmlpreview.github.io/?https://github.com/hqumeng1985/sanmen-camp-race-pages/blob/main/standalone/index.html">返回 6 篇入口</a>
+            <h2>转给今年负责团建的人</h2>
+            <p>如果你今年正好负责团建，先把这篇转给团队或老板。需要落地时，再提供人数、出发城市、预算区间、预计日期和团队目标，把路线、交通、餐饮、住宿、摄影、安全保障和轻量参与方案拆成一张执行清单；报价、联系人、保险细节以确认后的正式方案为准。</p>
+            
           </section>
         </div>
       </article>
     </main>
     <footer class="site-footer">三门山顶营地，让一次周末团建从出发就开始被记住。</footer>
-    
-    
-  
-
-</body></html>
+    </body></html>

@@ -69,6 +69,11 @@
         <h2>阅读顺序</h2>
         <p>企业团建先看露营节传播版，判断团队愿不愿意来；赛事报名先看越野赛报名版，判断自己适合哪一组。</p>
       </section>
+      <section class="index-section reference-panel">
+        <h2>新增：6 个 AI 爆款版</h2>
+        <p>保留原 6 篇不变，另做一组更适合公众号和朋友圈传播的多图版本，便于对比首屏、文笔、排版和转发效果。</p>
+        <a class="secondary-action" href="viral-loop/index.html">查看 6 个 AI 爆款版</a>
+      </section>
     `;
   }
 
@@ -234,6 +239,7 @@
     const root = document.querySelector("[data-root]");
     document.body.classList.add(pageTheme(page));
     const heroImage = page.heroImage;
+    const backAction = pageId === "camp-viral" ? "" : `<a class="secondary-action" href="index.html">返回 6 篇入口</a>`;
     root.innerHTML = `
       <article class="wechat-article">
         <header class="article-hero" style="--hero-image: url('${escapeHtml(heroImage)}')">
@@ -257,7 +263,7 @@
           <section id="cta" class="final-cta">
             <h2>${escapeHtml(page.cta)}</h2>
             <p>${escapeHtml(page.closing || "把这篇发给同伴，先把想参加的人聚起来。")}</p>
-            <a class="secondary-action" href="index.html">返回 6 篇入口</a>
+            ${backAction}
           </section>
         </div>
       </article>

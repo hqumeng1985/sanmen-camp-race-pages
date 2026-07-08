@@ -5,6 +5,7 @@
   --line: rgba(23, 32, 36, 0.14);
   --soft-line: rgba(23, 32, 36, 0.08);
   --camp-accent: #ee6b2f;
+  --camp-text-accent: #a74718;
   --camp-deep: #143d35;
   --camp-soft: #f4efe5;
   --race-accent: #d83b2d;
@@ -151,6 +152,14 @@ a {
     var(--hero-image);
 }
 
+body[data-page="camp-viral"] .article-hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(7, 18, 14, 0.78), rgba(7, 18, 14, 0.36), rgba(7, 18, 14, 0.08)),
+    var(--hero-image);
+  background-position: center 58%;
+  transform: none;
+}
+
 .race-theme .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(13, 28, 42, 0.9), rgba(13, 28, 42, 0.48), rgba(13, 28, 42, 0.12)),
@@ -172,6 +181,7 @@ a {
   font-size: clamp(38px, 7.2vw, 88px);
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .index-hero p,
@@ -552,7 +562,7 @@ a {
 }
 
 .timeline-item span {
-  color: var(--camp-accent);
+  color: var(--camp-text-accent);
   font-weight: 900;
 }
 
@@ -928,6 +938,33 @@ tr:last-child td {
   .secondary-action {
     width: 100%;
     text-align: center;
+  }
+
+  .article-hero h1 {
+    font-size: clamp(30px, 8.8vw, 42px);
+    line-height: 1.08;
+  }
+
+  table {
+    min-width: 0;
+  }
+
+  th,
+  td {
+    padding: 14px 12px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  body[data-page="camp-viral"] .article-hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(7, 18, 14, 0.44), rgba(7, 18, 14, 0.82)),
+      var(--hero-image);
+    background-position: center 62%;
+  }
+
+  .station-card::after {
+    right: 12px;
   }
 
   .info-card,
