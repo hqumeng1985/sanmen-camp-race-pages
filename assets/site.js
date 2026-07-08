@@ -29,6 +29,11 @@
     return item.id.startsWith("race") ? "race-theme" : "camp-theme";
   }
 
+  function cssAssetUrl(value) {
+    if (/^(https?:|data:|\/)/.test(value)) return value;
+    return value.startsWith("assets/") ? `../${value}` : value;
+  }
+
   function renderIndex() {
     const root = document.querySelector("[data-root]");
     const race = site.pages.filter((item) => item.id.startsWith("race"));
@@ -256,7 +261,7 @@
   function renderPage() {
     const root = document.querySelector("[data-root]");
     document.body.classList.add(pageTheme(page));
-    const heroImage = page.heroImage;
+    const heroImage = cssAssetUrl(page.heroImage);
     const backAction = pageId === "camp-viral" ? "" : `<a class="secondary-action" href="index.html">返回 3 篇入口</a>`;
     root.innerHTML = `
       <article class="wechat-article">
