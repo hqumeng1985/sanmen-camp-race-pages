@@ -15,7 +15,10 @@
   function renderNav() {
     const nav = document.querySelector("[data-nav]");
     if (!nav) return;
-    nav.innerHTML = site.pages.map((item) => `
+    const items = pageId === "index" || pageId.startsWith("race")
+      ? site.pages.filter((item) => item.id.startsWith("race"))
+      : site.pages;
+    nav.innerHTML = items.map((item) => `
       <a class="${item.id === pageId ? "nav-link active" : "nav-link"}" href="${item.file}">
         ${escapeHtml(item.navLabel || item.version)}
       </a>
@@ -28,24 +31,23 @@
 
   function renderIndex() {
     const root = document.querySelector("[data-root]");
-    const camp = site.pages.filter((item) => item.id.startsWith("camp"));
     const race = site.pages.filter((item) => item.id.startsWith("race"));
     root.innerHTML = `
       <section class="index-hero">
         <div class="index-hero-media" aria-hidden="true"></div>
         <div class="index-hero-copy">
-          <span class="kicker">三门山顶营地 x 嗨誓三门赛事品牌</span>
-          <h1>6 篇公众号成稿，分别让企业想来，让跑者想跑。</h1>
-          <p>露营节写给企业团队，越野赛写给跑者和商学院队伍。点开就是完整图文，不需要再把内容补成文章。</p>
+          <span class="kicker">2026 嗨誓三门越野赛</span>
+          <h1>3 篇越野赛公众号成稿，让跑者想跑，让队长想组队。</h1>
+          <p>报名传播、团队合作、沉浸体验三种角度。点开就是完整图文，适合直接发给跑友、队长、负责人和想一起去的人。</p>
         </div>
       </section>
       <section class="index-section">
         <div class="index-heading">
-          <h2>6 篇公众号成稿入口</h2>
+          <h2>3 篇越野赛公众号成稿入口</h2>
           <p>每一篇都按公众号阅读节奏完成：标题、首屏、信息卡、正文、流程、图片、FAQ 和行动引导已经放好。</p>
         </div>
         <div class="version-board">
-          ${[...camp, ...race].map((item) => `
+          ${race.map((item) => `
             <a class="version-card ${pageTheme(item)}" href="${item.file}">
               <span>${escapeHtml(item.group)}</span>
               <strong>${escapeHtml(item.version)}</strong>
@@ -57,17 +59,17 @@
       </section>
       <section class="index-section two-col">
         <article>
-          <h2>露营节怎么读</h2>
-          <p>先看传播版判断员工和朋友圈是否愿意转发，再看企业主/HR 版判断采购理由，最后看沉浸版感受现场体验。</p>
-        </article>
-        <article>
           <h2>越野赛怎么读</h2>
           <p>先看报名传播版判断组别，再看商学院/合作方版判断团队与合作价值，最后看跑者沉浸版判断两天背靠背训练感。</p>
+        </article>
+        <article>
+          <h2>适合发给谁</h2>
+          <p>报名传播版发给跑友，合作版发给队长、HR 和负责人，沉浸版发给想一起去的人。</p>
         </article>
       </section>
       <section class="index-section reference-panel">
         <h2>阅读顺序</h2>
-        <p>企业团建先看露营节传播版，判断团队愿不愿意来；赛事报名先看越野赛报名版，判断自己适合哪一组。</p>
+        <p>先判断自己适合 11 / 21 / 33 哪一组，再判断要不要组队，最后用沉浸版把朋友拉进同一个群里。</p>
       </section>
     `;
   }
@@ -234,7 +236,7 @@
     const root = document.querySelector("[data-root]");
     document.body.classList.add(pageTheme(page));
     const heroImage = page.heroImage;
-    const backAction = pageId === "camp-viral" ? "" : `<a class="secondary-action" href="index.html">返回 6 篇入口</a>`;
+    const backAction = pageId === "camp-viral" ? "" : `<a class="secondary-action" href="index.html">返回 3 篇入口</a>`;
     root.innerHTML = `
       <article class="wechat-article">
         <header class="article-hero" style="--hero-image: url('${escapeHtml(heroImage)}')">
