@@ -1,21 +1,20 @@
 <!doctype html>
-<html lang="zh-CN">
-  <head>
+<html lang="zh-CN"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>2026 嗨誓三门越野赛 3 篇公众号成稿</title>
-    
     <link rel="icon" href="data:,">
-    <style>:root {
+
+  <style>:root {
   --paper: #fffdf7;
   --ink: #172024;
   --muted: #66706b;
   --line: rgba(23, 32, 36, 0.14);
   --soft-line: rgba(23, 32, 36, 0.08);
-  --camp-accent: #ee6b2f;
-  --camp-text-accent: #a74718;
-  --camp-deep: #143d35;
-  --camp-soft: #f4efe5;
+  --warm-accent: #ee6b2f;
+  --warm-text-accent: #a74718;
+  --brand-deep: #143d35;
+  --warm-soft: #f4efe5;
   --race-accent: #d83b2d;
   --race-deep: #173d59;
   --race-soft: #eef6fb;
@@ -86,7 +85,7 @@ a {
   place-items: center;
   border-radius: 8px;
   color: white;
-  background: linear-gradient(135deg, var(--camp-deep), var(--camp-accent));
+  background: linear-gradient(135deg, var(--brand-deep), var(--warm-accent));
 }
 
 .race-theme .brand-mark {
@@ -148,28 +147,15 @@ a {
   content: "";
   background:
     linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
-    url("https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/camp-aerial.jpg");
+    url("https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-ai-commercial-steps-runner-hero.jpg");
   background-size: cover;
   background-position: center;
-  transform: scale(1.02);
 }
 
 .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
     var(--hero-image);
-}
-
-body[data-page="camp-viral"] .article-hero::before {
-  background-image:
-    linear-gradient(90deg, rgba(7, 18, 14, 0.78), rgba(7, 18, 14, 0.36), rgba(7, 18, 14, 0.08)),
-    var(--hero-image);
-  background-position: center 58%;
-  transform: none;
-}
-
-body[data-page="camp-viral"] .article-hero h1 {
-  white-space: pre-line;
 }
 
 .race-theme .article-hero::before {
@@ -277,8 +263,8 @@ body[data-page="camp-viral"] .article-hero h1 {
   text-decoration: none;
 }
 
-.version-card.camp-theme {
-  border-top: 5px solid var(--camp-accent);
+.version-card.warm-theme {
+  border-top: 5px solid var(--warm-accent);
 }
 
 .version-card.race-theme {
@@ -425,8 +411,8 @@ body[data-page="camp-viral"] .article-hero h1 {
   background: white;
 }
 
-.camp-theme .info-card {
-  box-shadow: inset 0 4px 0 var(--camp-accent);
+.warm-theme .info-card {
+  box-shadow: inset 0 4px 0 var(--warm-accent);
 }
 
 .race-theme .info-card {
@@ -497,7 +483,7 @@ body[data-page="camp-viral"] .article-hero h1 {
   width: 5px;
   border-radius: 999px;
   content: "";
-  background: var(--camp-accent);
+  background: var(--warm-accent);
 }
 
 .race-theme .article-block h2::before,
@@ -529,6 +515,13 @@ body[data-page="camp-viral"] .article-hero h1 {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+.race-theme .video-section video {
+  max-height: 760px;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #02070a;
 }
 
 .article-figure figcaption {
@@ -628,7 +621,7 @@ body[data-page="camp-viral"] .article-hero h1 {
 }
 
 .timeline-item span {
-  color: var(--camp-text-accent);
+  color: var(--warm-text-accent);
   font-weight: 900;
 }
 
@@ -668,7 +661,7 @@ td {
 }
 
 th {
-  background: var(--camp-soft);
+  background: var(--warm-soft);
   font-weight: 900;
 }
 
@@ -722,7 +715,7 @@ tr:last-child td {
   margin-bottom: 10px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: var(--camp-deep);
+  background: var(--brand-deep);
   color: white;
   font-size: 13px;
   font-weight: 900;
@@ -766,7 +759,7 @@ tr:last-child td {
   height: 7px;
   border-radius: 50%;
   content: "";
-  background: var(--camp-accent);
+  background: var(--warm-accent);
 }
 
 .race-theme .station-card li::before {
@@ -806,7 +799,7 @@ tr:last-child td {
   height: 16px;
   border-radius: 50%;
   content: "";
-  background: var(--camp-accent);
+  background: var(--warm-accent);
 }
 
 .race-theme .punch-list li::before,
@@ -818,7 +811,7 @@ tr:last-child td {
 
 .article-quote {
   padding: clamp(24px, 5vw, 44px);
-  border-left: 8px solid var(--camp-accent);
+  border-left: 8px solid var(--warm-accent);
   border-radius: 8px;
   background: white;
 }
@@ -878,7 +871,7 @@ tr:last-child td {
 }
 
 .inference-notes {
-  background: var(--camp-soft);
+  background: var(--warm-soft);
 }
 
 .race-theme .inference-notes {
@@ -917,7 +910,7 @@ tr:last-child td {
 }
 
 .final-cta {
-  background: linear-gradient(135deg, var(--camp-deep), #1f5c4a);
+  background: linear-gradient(135deg, var(--brand-deep), #1f5c4a);
   color: white;
 }
 
@@ -1027,13 +1020,6 @@ tr:last-child td {
     line-height: 1.7;
   }
 
-  body[data-page="camp-viral"] .article-hero::before {
-    background-image:
-      linear-gradient(180deg, rgba(7, 18, 14, 0.44), rgba(7, 18, 14, 0.82)),
-      var(--hero-image);
-    background-position: center 62%;
-  }
-
   .station-card::after {
     right: 12px;
   }
@@ -1060,69 +1046,84 @@ tr:last-child td {
     transform: none;
   }
 }
-</style>
-  </head>
-  <body data-page="index" class="">
+</style></head>
+  <body data-page="index">
     <header class="topbar">
       <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门越野赛 3 篇</span></a>
-      <nav class="nav-scroll" aria-label="三门越野赛页面导航">
+      <nav class="nav-scroll" data-nav="" aria-label="三门越野赛页面导航">
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
-        越野赛报名
+        跑友出发
       </a>
+
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
-        越野赛合作
+        商学院成队
       </a>
+
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
-        越野赛沉浸
-      </a></nav>
+        山海目的地
+      </a>
+    </nav>
     </header>
-    <main>
+    <main data-root="">
       <section class="index-hero">
         <div class="index-hero-media" aria-hidden="true"></div>
         <div class="index-hero-copy">
           <span class="kicker">2026 嗨誓三门越野赛</span>
-          <h1>3 篇越野赛公众号成稿，让跑者想跑，让队长想组队。</h1>
-          <p>报名传播、团队合作、沉浸体验三种角度。点开就是完整图文，适合直接发给跑友、队长、负责人和想一起去的人。</p>
+          <h1>越野赛与商业三阶：三种人群，三条进入三门的路。</h1>
+          <p>跑友看出发，商学院看成队，户外朋友看山海。自我管理、团队协作、地方生态，会在同一条三门山路上发生。</p>
         </div>
       </section>
       <section class="index-section">
         <div class="index-heading">
-          <h2>3 篇越野赛公众号成稿入口</h2>
-          <p>每一篇都按公众号阅读节奏完成：标题、首屏、信息卡、正文、流程、图片、FAQ 和行动引导已经放好。</p>
+          <h2>选一篇最适合你的发布对象</h2>
+          <p>跑友看出发，商学院看成队，户外人看山海。每个版本都有视频、主视觉和历届现场照片，可以按发布对象直接选择。</p>
         </div>
         <div class="version-board">
-          
+
             <a class="version-card race-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
               <span>2026 嗨誓三门越野赛</span>
-              <strong>报名传播版</strong>
-              <em>别把三门越野想太硬：
-跑过风车古村，晚上营地碰头</em>
-              <small>11 / 21 / 33 三种强度，不是把所有人推上硬核赛道，而是从亭旁古城门出发，跑进风车、古村和三门山海，晚上再到营地等队友。</small>
+              <strong>越野跑爱好者</strong>
+              <em>别只问配速：
+三门这场越野，跑的是商业三阶</em>
+              <small>第一阶，把自己带上山；第二阶，把队友带到终点；第三阶，把风车、古村、山海和赛后停留跑成一个值得转发的周末。11 / 21 / 33 公里，选一条适合你的路。</small>
             </a>
+
             <a class="version-card race-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
               <span>2026 嗨誓三门越野赛</span>
-              <strong>商学院/合作方版</strong>
-              <em>老板为什么会批一场越野团建？
-因为它不是出去玩</em>
-              <small>它把 11 / 21 / 33 轻越野、风车古村路线、商学院团队协作和营地露营趣味放进同一个周末。老板看到组织收益，队长看到执行路径，合作方看到三门文旅停留。</small>
+              <strong>商学院队伍</strong>
+              <em>一支商学院队伍，
+为什么要跑进三门山里？</em>
+              <small>因为课堂上讲过的自我管理、团队协作、商业生态，到了山路上会立刻变真。10 人一组、至少 2 名女生、第六人成绩，两天路线把队伍训练成队伍。</small>
             </a>
+
             <a class="version-card race-theme" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
               <span>2026 嗨誓三门越野赛</span>
-              <strong>沉浸体验版</strong>
-              <em>如果今年只约一次户外，
-就从古城门跑到营地</em>
-              <small>先别急着问配速。想象这一天：鞋底踩上山路，风车从远处出现，古村把速度放慢，傍晚抵达枧星空，晚上坐进露营灯光里。</small>
+              <strong>山海自然目的地</strong>
+              <em>风车、古村、山海、终点：
+三门把越野跑成一堂商业课</em>
+              <small>如果你今年只想留一个户外周末，就去三门看一条路线如何穿过身体、队伍和地方。它不是单纯跑步，也不是单纯旅行。</small>
             </a>
+
         </div>
       </section>
       <section class="index-section two-col">
-        <article><h2>越野赛怎么读</h2><p>先看报名传播版判断组别，再看商学院/合作方版判断团队与合作价值，最后看跑者沉浸版判断两天背靠背训练感。</p></article>
-        <article><h2>适合发给谁</h2><p>报名传播版发给跑友，合作版发给队长、HR 和负责人，沉浸版发给想一起去的人。</p></article>
+        <article>
+          <h2>越野赛怎么读</h2>
+          <p>先看跑者版判断 11 / 21 / 33 怎么选，再看商学院版理解团队规则，最后看自然沉浸版判断这是不是值得留出来的户外周末。</p>
+        </article>
+        <article>
+          <h2>适合发给谁</h2>
+          <p>跑者版发给跑团群，商学院版发给队长和负责人，自然沉浸版发给还没决定报名但会被风车、古村和山海打动的人。</p>
+        </article>
       </section>
       <section class="index-section reference-panel">
-        <h2>阅读顺序</h2>
-        <p>先判断自己适合 11 / 21 / 33 哪一组，再判断要不要组队，最后用沉浸版把朋友拉进同一个群里。</p>
-      </section></main>
-    <footer class="site-footer">2026 嗨誓三门越野赛，3 篇公众号成稿入口。历届照片来自本地赛事要素整理，氛围图用于传播想象。</footer>
-  </body>
-</html>
+        <h2>推荐选择</h2>
+        <p>如果只能选一篇公众号首发，优先看商学院队伍版；它最完整地承接“越野赛与商业三阶”。</p>
+      </section>
+    </main>
+    <footer class="site-footer">2026 嗨誓三门越野赛，3 篇公众号成稿入口。</footer>
+
+
+
+
+</body></html>

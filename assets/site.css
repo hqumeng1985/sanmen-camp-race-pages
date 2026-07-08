@@ -4,10 +4,10 @@
   --muted: #66706b;
   --line: rgba(23, 32, 36, 0.14);
   --soft-line: rgba(23, 32, 36, 0.08);
-  --camp-accent: #ee6b2f;
-  --camp-text-accent: #a74718;
-  --camp-deep: #143d35;
-  --camp-soft: #f4efe5;
+  --warm-accent: #ee6b2f;
+  --warm-text-accent: #a74718;
+  --brand-deep: #143d35;
+  --warm-soft: #f4efe5;
   --race-accent: #d83b2d;
   --race-deep: #173d59;
   --race-soft: #eef6fb;
@@ -78,7 +78,7 @@ a {
   place-items: center;
   border-radius: 8px;
   color: white;
-  background: linear-gradient(135deg, var(--camp-deep), var(--camp-accent));
+  background: linear-gradient(135deg, var(--brand-deep), var(--warm-accent));
 }
 
 .race-theme .brand-mark {
@@ -140,28 +140,15 @@ a {
   content: "";
   background:
     linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
-    url("camp-aerial.jpg");
+    url("race-ai-commercial-steps-runner-hero.jpg");
   background-size: cover;
   background-position: center;
-  transform: scale(1.02);
 }
 
 .article-hero::before {
   background-image:
     linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
     var(--hero-image);
-}
-
-body[data-page="camp-viral"] .article-hero::before {
-  background-image:
-    linear-gradient(90deg, rgba(7, 18, 14, 0.78), rgba(7, 18, 14, 0.36), rgba(7, 18, 14, 0.08)),
-    var(--hero-image);
-  background-position: center 58%;
-  transform: none;
-}
-
-body[data-page="camp-viral"] .article-hero h1 {
-  white-space: pre-line;
 }
 
 .race-theme .article-hero::before {
@@ -269,8 +256,8 @@ body[data-page="camp-viral"] .article-hero h1 {
   text-decoration: none;
 }
 
-.version-card.camp-theme {
-  border-top: 5px solid var(--camp-accent);
+.version-card.warm-theme {
+  border-top: 5px solid var(--warm-accent);
 }
 
 .version-card.race-theme {
@@ -417,8 +404,8 @@ body[data-page="camp-viral"] .article-hero h1 {
   background: white;
 }
 
-.camp-theme .info-card {
-  box-shadow: inset 0 4px 0 var(--camp-accent);
+.warm-theme .info-card {
+  box-shadow: inset 0 4px 0 var(--warm-accent);
 }
 
 .race-theme .info-card {
@@ -489,7 +476,7 @@ body[data-page="camp-viral"] .article-hero h1 {
   width: 5px;
   border-radius: 999px;
   content: "";
-  background: var(--camp-accent);
+  background: var(--warm-accent);
 }
 
 .race-theme .article-block h2::before,
@@ -521,6 +508,13 @@ body[data-page="camp-viral"] .article-hero h1 {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+.race-theme .video-section video {
+  max-height: 760px;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #02070a;
 }
 
 .article-figure figcaption {
@@ -620,7 +614,7 @@ body[data-page="camp-viral"] .article-hero h1 {
 }
 
 .timeline-item span {
-  color: var(--camp-text-accent);
+  color: var(--warm-text-accent);
   font-weight: 900;
 }
 
@@ -660,7 +654,7 @@ td {
 }
 
 th {
-  background: var(--camp-soft);
+  background: var(--warm-soft);
   font-weight: 900;
 }
 
@@ -714,7 +708,7 @@ tr:last-child td {
   margin-bottom: 10px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: var(--camp-deep);
+  background: var(--brand-deep);
   color: white;
   font-size: 13px;
   font-weight: 900;
@@ -758,7 +752,7 @@ tr:last-child td {
   height: 7px;
   border-radius: 50%;
   content: "";
-  background: var(--camp-accent);
+  background: var(--warm-accent);
 }
 
 .race-theme .station-card li::before {
@@ -798,7 +792,7 @@ tr:last-child td {
   height: 16px;
   border-radius: 50%;
   content: "";
-  background: var(--camp-accent);
+  background: var(--warm-accent);
 }
 
 .race-theme .punch-list li::before,
@@ -810,7 +804,7 @@ tr:last-child td {
 
 .article-quote {
   padding: clamp(24px, 5vw, 44px);
-  border-left: 8px solid var(--camp-accent);
+  border-left: 8px solid var(--warm-accent);
   border-radius: 8px;
   background: white;
 }
@@ -870,7 +864,7 @@ tr:last-child td {
 }
 
 .inference-notes {
-  background: var(--camp-soft);
+  background: var(--warm-soft);
 }
 
 .race-theme .inference-notes {
@@ -909,7 +903,7 @@ tr:last-child td {
 }
 
 .final-cta {
-  background: linear-gradient(135deg, var(--camp-deep), #1f5c4a);
+  background: linear-gradient(135deg, var(--brand-deep), #1f5c4a);
   color: white;
 }
 
@@ -1017,13 +1011,6 @@ tr:last-child td {
     padding: 14px 12px;
     font-size: 15px;
     line-height: 1.7;
-  }
-
-  body[data-page="camp-viral"] .article-hero::before {
-    background-image:
-      linear-gradient(180deg, rgba(7, 18, 14, 0.44), rgba(7, 18, 14, 0.82)),
-      var(--hero-image);
-    background-position: center 62%;
   }
 
   .station-card::after {

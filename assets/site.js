@@ -15,9 +15,7 @@
   function renderNav() {
     const nav = document.querySelector("[data-nav]");
     if (!nav) return;
-    const items = pageId === "index" || pageId.startsWith("race")
-      ? site.pages.filter((item) => item.id.startsWith("race"))
-      : site.pages;
+    const items = site.pages.filter((item) => item.id.startsWith("race"));
     nav.innerHTML = items.map((item) => `
       <a class="${item.id === pageId ? "nav-link active" : "nav-link"}" href="${item.file}">
         ${escapeHtml(item.navLabel || item.version)}
@@ -26,7 +24,7 @@
   }
 
   function pageTheme(item) {
-    return item.id.startsWith("race") ? "race-theme" : "camp-theme";
+    return "race-theme";
   }
 
   function cssAssetUrl(value) {
@@ -42,14 +40,14 @@
         <div class="index-hero-media" aria-hidden="true"></div>
         <div class="index-hero-copy">
           <span class="kicker">2026 嗨誓三门越野赛</span>
-          <h1>3 篇越野赛公众号成稿，让跑者想跑，让队长想组队。</h1>
-          <p>报名传播、团队合作、沉浸体验三种角度。点开就是完整图文，适合直接发给跑友、队长、负责人和想一起去的人。</p>
+          <h1>越野赛与商业三阶：三种人群，三条进入三门的路。</h1>
+          <p>跑友看出发，商学院看成队，户外朋友看山海。自我管理、团队协作、地方生态，会在同一条三门山路上发生。</p>
         </div>
       </section>
       <section class="index-section">
         <div class="index-heading">
-          <h2>3 篇越野赛公众号成稿入口</h2>
-          <p>每一篇都按公众号阅读节奏完成：标题、首屏、信息卡、正文、流程、图片、FAQ 和行动引导已经放好。</p>
+          <h2>选一篇最适合你的发布对象</h2>
+          <p>跑友看出发，商学院看成队，户外人看山海。每个版本都有视频、主视觉和历届现场照片，可以按发布对象直接选择。</p>
         </div>
         <div class="version-board">
           ${race.map((item) => `
@@ -65,16 +63,16 @@
       <section class="index-section two-col">
         <article>
           <h2>越野赛怎么读</h2>
-          <p>先看报名传播版判断组别，再看商学院/合作方版判断团队与合作价值，最后看跑者沉浸版判断两天背靠背训练感。</p>
+          <p>先看跑者版判断 11 / 21 / 33 怎么选，再看商学院版理解团队规则，最后看自然沉浸版判断这是不是值得留出来的户外周末。</p>
         </article>
         <article>
           <h2>适合发给谁</h2>
-          <p>报名传播版发给跑友，合作版发给队长、HR 和负责人，沉浸版发给想一起去的人。</p>
+          <p>跑者版发给跑团群，商学院版发给队长和负责人，自然沉浸版发给还没决定报名但会被风车、古村和山海打动的人。</p>
         </article>
       </section>
       <section class="index-section reference-panel">
-        <h2>阅读顺序</h2>
-        <p>先判断自己适合 11 / 21 / 33 哪一组，再判断要不要组队，最后用沉浸版把朋友拉进同一个群里。</p>
+        <h2>推荐选择</h2>
+        <p>如果只能选一篇公众号首发，优先看商学院队伍版；它最完整地承接“越野赛与商业三阶”。</p>
       </section>
     `;
   }
@@ -101,7 +99,7 @@
         <div class="race-essentials-grid">
           <article><span>时间地点</span><strong>2026 年 12 月 5-6 日，浙江省台州市三门县</strong></article>
           <article><span>距离体系</span><strong>11 公里轻体验、21 公里初级、33 公里挑战</strong></article>
-          <article><span>团队方向</span><strong>商学院、企业队伍和跑团可围绕团队协作与营地停留组织</strong></article>
+          <article><span>团队方向</span><strong>商学院、企业队伍和跑团可围绕团队协作与赛后停留组织</strong></article>
           <article><span>团队规则</span><strong>10 人一组，至少 2 名女生，女生减时，取每天第六名成绩两天相加</strong></article>
         </div>
       </section>
@@ -262,7 +260,7 @@
     const root = document.querySelector("[data-root]");
     document.body.classList.add(pageTheme(page));
     const heroImage = cssAssetUrl(page.heroImage);
-    const backAction = pageId === "camp-viral" ? "" : `<a class="secondary-action" href="index.html">返回 3 篇入口</a>`;
+    const backAction = `<a class="secondary-action" href="index.html">返回 3 篇入口</a>`;
     root.innerHTML = `
       <article class="wechat-article">
         <header class="article-hero" style="--hero-image: url('${escapeHtml(heroImage)}')">
@@ -285,7 +283,7 @@
           ${page.blocks.map(renderBlock).join("")}
           <section id="cta" class="final-cta">
             <h2>${escapeHtml(page.cta)}</h2>
-            <p>${escapeHtml(page.closing || "把这篇发给同伴，先把想参加的人聚起来。")}</p>
+            <p>${escapeHtml(page.closing || "把链接发给同伴，先把想参加的人聚起来。")}</p>
             ${backAction}
           </section>
         </div>
