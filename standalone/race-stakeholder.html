@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="zh-CN"><head>
+<html lang="zh-CN">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>老板为什么会批一场越野团建？因为它不是出去玩</title>
-    <meta name="description" content="2026 嗨誓三门越野赛商学院与合作方版：11 / 21 / 33 轻越野、团队协作、露营趣味和三门文旅停留价值。">
+    <title>老板为什么会批一场越野团建？ 因为它不是出去玩 | 商学院/合作方版</title>
+    <meta name="description" content="它把 11 / 21 / 33 轻越野、风车古村路线、商学院团队协作和营地露营趣味放进同一个周末。老板看到组织收益，队长看到执行路径，合作方看到三门文旅停留。">
     <link rel="icon" href="data:,">
-    <style data-inline="site.css">:root {
+    <style>:root {
   --paper: #fffdf7;
   --ink: #172024;
   --muted: #66706b;
@@ -147,7 +148,7 @@ a {
   content: "";
   background:
     linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
-    url("https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-aerial.jpg");
+    url("https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/camp-aerial.jpg");
   background-size: cover;
   background-position: center;
   transform: scale(1.02);
@@ -542,6 +543,60 @@ body[data-page="camp-viral"] .article-hero h1 {
   line-height: 1.7;
 }
 
+.historical-gallery {
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.historical-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.historical-gallery figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--soft-line);
+  border-radius: 8px;
+  background: #101d1a;
+}
+
+.historical-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.historical-gallery figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  color: white;
+}
+
+.historical-gallery figcaption span {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.historical-gallery figcaption strong {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.gallery-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
 .video-section {
   padding: 20px;
   border-radius: 8px;
@@ -921,6 +976,10 @@ tr:last-child td {
     grid-template-columns: 1fr;
   }
 
+  .historical-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
   table {
     min-width: 620px;
   }
@@ -1005,24 +1064,21 @@ tr:last-child td {
   </head>
   <body data-page="race-stakeholder" class="race-theme">
     <header class="topbar">
-      <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
-      <nav class="nav-scroll" data-nav="" aria-label="六版本页面导航">
+      <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门越野赛 3 篇</span></a>
+      <nav class="nav-scroll" aria-label="三门越野赛页面导航">
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
         越野赛报名
       </a>
-    
       <a class="nav-link active" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
         越野赛合作
       </a>
-    
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
         越野赛沉浸
-      </a>
-    </nav>
+      </a></nav>
     </header>
-    <main data-root="">
+    <main>
       <article class="wechat-article">
-        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-route-field-1600.jpg')">
+        <header class="article-hero" style="--hero-image: url('https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-route-field-1600.jpg')">
           <div class="article-hero-copy">
             <span class="kicker">2026 嗨誓三门越野赛 | 商学院/合作方版</span>
             <h1>老板为什么会批一场越野团建？
@@ -1031,11 +1087,9 @@ tr:last-child td {
             <a class="primary-action" href="#cta">转给队长或负责人：先拿这张团队方案清单</a>
           </div>
         </header>
-
         <section class="article-proof" aria-label="核心亮点">
           <span>老板看收益</span><span>队长看协作</span><span>HR 看执行</span><span>文旅看停留</span>
         </section>
-
         
       <section class="article-info-grid" aria-label="文章信息卡">
         
@@ -1044,27 +1098,22 @@ tr:last-child td {
             <strong>不是被动团建，是共同完成</strong>
             <p>路线、分组、补给、营地和合影，让团队协作有真实发生的场景。</p>
           </article>
-        
           <article class="info-card">
             <span>老板为什么批</span>
             <strong>活动能沉淀内容资产</strong>
             <p>风车、古村、山海、营地和队伍故事，比普通饭局更容易沉淀企业文化素材。</p>
           </article>
-        
           <article class="info-card">
             <span>队长怎么组织</span>
             <strong>11 / 21 / 33 分层推进</strong>
             <p>按体能分组、按角色分工，避免把所有人推到同一种强度里。</p>
           </article>
-        
           <article class="info-card">
             <span>合作方得到什么</span>
             <strong>从赛道延伸到营地</strong>
             <p>触点不止起终点，也包括路线照片、队伍故事、营地停留和赛后文旅路线。</p>
           </article>
-        
       </section>
-    
         
       <section class="race-essentials" aria-label="2026 嗨誓三门越野赛基础信息">
         <h2>2026 嗨誓三门越野赛基础信息</h2>
@@ -1075,232 +1124,202 @@ tr:last-child td {
           <article><span>团队规则</span><strong>10 人一组，至少 2 名女生，女生减时，取每天第六名成绩两天相加</strong></article>
         </div>
       </section>
-    
-
         <div class="article-body">
           
-        <section class="article-block">
-          <h2>老板最怕的，不是员工累，是花钱买热闹</h2>
-          <p class="lead">一场能被批的团建，要同时回答：值不值、稳不稳、有没有人愿意发。</p>
-          <p>普通团建经常卡在一个问题上：老板觉得像花钱热闹，HR 担心执行风险，员工觉得又被安排。三门这场轻越野的优势，是把团队协作、文旅路线和营地停留放到同一条产品线上。</p><p>11 / 21 / 33 的分层，让不同体能的人有选择；风车路线、古村风景和三门山海，让活动不只是“走一段路”；露营烧烤、小吃、音乐和夜间社交，让团队从共同完成切换到自然交流。</p><p>这也是三门可以打动合作方的地方：它不是单点赛事，而是把赛事、团建和文旅停留接起来的样板。预算买到的不只是一晚热闹，而是一次共同经历、一次内容资产和一条可以复用的团队路线。</p>
-        </section>
-      
-        <section class="article-block">
-          <h2>普通团建 / 普通赛事 vs 三门文旅轻越野</h2>
-          <p class="lead">决策者要看的不是热闹描述，而是组织价值是否成立。</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr><th>常见做法</th><th>三门这场的转化点</th></tr>
-              </thead>
-              <tbody>
-                
-                  <tr><td>团建只讲吃饭、游戏和合影。</td><td>用风车、古村、山海路线制造共同完成，再用营地夜晚承接关系。</td></tr>
-                
-                  <tr><td>赛事只讲报名规模和起终点曝光。</td><td>把跑者留到营地，让品牌、文旅和队伍故事有更长触达时间。</td></tr>
-                
-                  <tr><td>HR 临时拼流程，员工只知道被通知。</td><td>提前拆出体能分层、队伍分工、补给收容、摄影节点和返程安排。</td></tr>
-                
-                  <tr><td>合作方只买一个 logo 露出。</td><td>合作方可以进入路线、补给、营地、队伍故事和赛后游玩内容。</td></tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </section>
-      
-        <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-start-gate-real.jpg" alt="历届赛事资料中的三门赛事起点画面">
-          <figcaption><strong>起点不是背景板，是团队共同出发的仪式</strong><span>对企业队伍和商学院跑团来说，出发仪式很重要：它把临时拼起来的人，变成同一条路线上的队伍。</span></figcaption>
-        </figure>
-      
-        <section class="article-block station-block">
-          <h2>四类人，各自为什么会转发这篇</h2>
-          <p class="lead">同一场赛事，要给不同角色不同的行动理由。</p>
-          <div class="station-grid">
+          <section class="article-block">
+            <h2>老板最怕的，不是员工累，是花钱买热闹</h2>
+            <p class="lead">一场能被批的团建，要同时回答：值不值、稳不稳、有没有人愿意发。</p>
+            <p>普通团建经常卡在一个问题上：老板觉得像花钱热闹，HR 担心执行风险，员工觉得又被安排。三门这场轻越野的优势，是把团队协作、文旅路线和营地停留放到同一条产品线上。</p><p>11 / 21 / 33 的分层，让不同体能的人有选择；风车路线、古村风景和三门山海，让活动不只是“走一段路”；露营烧烤、小吃、音乐和夜间社交，让团队从共同完成切换到自然交流。</p><p>这也是三门可以打动合作方的地方：它不是单点赛事，而是把赛事、团建和文旅停留接起来的样板。预算买到的不只是一晚热闹，而是一次共同经历、一次内容资产和一条可以复用的团队路线。</p>
+          </section>
+          <section class="article-block">
+            <h2>普通团建 / 普通赛事 vs 三门文旅轻越野</h2>
+            <p class="lead">决策者要看的不是热闹描述，而是组织价值是否成立。</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>常见做法</th><th>三门这场的转化点</th></tr></thead>
+                <tbody><tr><td>团建只讲吃饭、游戏和合影。</td><td>用风车、古村、山海路线制造共同完成，再用营地夜晚承接关系。</td></tr><tr><td>赛事只讲报名规模和起终点曝光。</td><td>把跑者留到营地，让品牌、文旅和队伍故事有更长触达时间。</td></tr><tr><td>HR 临时拼流程，员工只知道被通知。</td><td>提前拆出体能分层、队伍分工、补给收容、摄影节点和返程安排。</td></tr><tr><td>合作方只买一个 logo 露出。</td><td>合作方可以进入路线、补给、营地、队伍故事和赛后游玩内容。</td></tr></tbody>
+              </table>
+            </div>
+          </section>
+          <section class="article-block historical-gallery">
+            <h2>给负责人看的，不只是风景，是历届组织证据</h2>
+            <p class="lead">商学院队长、企业负责人和合作方最需要看到的，是这场赛事过去已经有起点仪式、队伍组织、补给接待和完赛情绪。</p>
+            <div class="historical-gallery-grid">
+              
+                <figure>
+                  <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-2023-start.jpg" alt="2023 嗨誓三门越野赛起点仪式回顾照片">
+                  <figcaption>
+                    <span>2023 回顾 / 起点仪式</span>
+                    <strong>起点能把临时集合的人变成同一条路线上的队伍。</strong>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-2024-aid-station.jpg" alt="2024 嗨誓三门越野赛补给接待回顾照片">
+                  <figcaption>
+                    <span>2024 回顾 / 补给接待</span>
+                    <strong>补给点和志愿者让组织能力被看见，不只是 logo 露出。</strong>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-2025-finish.jpg" alt="2025 嗨誓三门越野赛完赛回顾照片">
+                  <figcaption>
+                    <span>2025 回顾 / 完赛情绪</span>
+                    <strong>完赛瞬间能转成企业文化素材、队伍故事和二次传播。</strong>
+                  </figcaption>
+                </figure>
+            </div>
+            <p class="gallery-note">以上照片来自本地基础材料《嗨誓三门越野赛赛事要素整理》解包图片；它们用于证明历届赛事组织场景，不替代 2026 正式执行图。</p>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-start-gate-real.jpg" alt="历届赛事资料中的三门赛事起点画面">
+            <figcaption><strong>起点不是背景板，是团队共同出发的仪式</strong><span>对企业队伍和商学院跑团来说，出发仪式很重要：它把临时拼起来的人，变成同一条路线上的队伍。</span></figcaption>
+          </figure>
+          <section class="article-block station-block">
+            <h2>四类人，各自为什么会转发这篇</h2>
+            <p class="lead">同一场赛事，要给不同角色不同的行动理由。</p>
+            <div class="station-grid">
+              
+                <article class="station-card">
+                  <span>给老板</span>
+                  <h3>这不是出去玩，是团队资产</h3>
+                  <p>老板需要看到投入回报：共同经历、组织协作、活动回顾、员工朋友圈和客户关系场景。</p>
+                  <ul><li>团队关系</li><li>企业文化素材</li><li>客户慢交流</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>给 HR</span>
+                  <h3>不是硬拉练，是可分层执行</h3>
+                  <p>HR 需要看到风险可控：11 / 21 / 33 分层、补给、收容、摄影、交通、返程都能拆成表。</p>
+                  <ul><li>体能分层</li><li>补给收容</li><li>返程节点</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>给队长</span>
+                  <h3>不是拼最快，是练团队厚度</h3>
+                  <p>商学院和企业队长关心的是分工、女生队员、节奏员、第六人保护和第二天状态。</p>
+                  <ul><li>队伍分工</li><li>团队协作</li><li>节奏管理</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>给合作方</span>
+                  <h3>不只曝光，是文旅停留</h3>
+                  <p>文旅和品牌方关心真实触点：风车、古村、营地、补给、队伍故事和赛后路线都能成为内容。</p>
+                  <ul><li>路线内容</li><li>营地停留</li><li>赛后消费</li></ul>
+                </article>
+            </div>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-team-trail-real.jpg" alt="历届赛事资料中的山路队伍画面">
+            <figcaption><strong>队伍在山路上，协作才会变具体</strong><span>会议室里很难看见谁会等同伴、谁会提醒补给、谁能把慢的人带上。路线会把这些协作细节自然暴露出来。</span></figcaption>
+          </figure>
+          <section class="article-block punch-list">
+            <h2>一页纸老板版，可以这样写</h2>
+            <ul><li>目标：用三门轻越野和营地节，把年度团建从饭局升级为一次可传播的团队共同经历。</li><li>收益：员工参与意愿、团队协作训练、企业文化照片/短视频、客户或校友慢交流场景。</li><li>风控：按 11 / 21 / 33 做体能分层，提前确认健康情况、补给、收容、交通和返程。</li><li>内容：风车路线、古村风景、三门山海、营地露营、团队合影和活动回顾。</li><li>边界：费用、名额、保险、装备、交通和合作权益以正式方案逐项确认。</li></ul>
+          </section>
+          <section class="article-block punch-list">
+            <h2>队长执行清单，先别等报名才做</h2>
+            <ul><li>按体能把队员分为 11 公里体验、21 公里完整路线、33 公里挑战或团队训练方向。</li><li>提前确定队长、节奏员、补给提醒、摄影记录、收尾陪同和营地集合负责人。</li><li>把风车、古村、山海和营地几个关键画面做成拍摄节点，不要只拍起终点。</li><li>如果是商学院或企业队，提前练习“照顾第六人”的团队策略，而不是只看最快的人。</li><li>提前准备队伍群文案、老板说明、一页纸预算口径和赛后回顾素材。</li></ul>
+          </section>
+          <section class="article-block">
+            <h2>团队为什么来：从出发到内容沉淀</h2>
+            <p class="lead">把一场越野赛看成团队项目，就要从行前、路上、营地和赛后四段组织。</p>
+            <div class="timeline">
+              
+                <article class="timeline-item">
+                  <span>行前</span>
+                  <div>
+                    <h3>确定目标和分层</h3>
+                    <p>是年度团建、商学院训练、客户维护还是合作方活动？目标不同，组别、预算和交付物也不同。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>出发</span>
+                  <div>
+                    <h3>古城门集合与队伍仪式</h3>
+                    <p>完成分组、合影、安全说明、补给提醒和摄影节点，先把队伍组织起来。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>路上</span>
+                  <div>
+                    <h3>风车、古村、山海中的协作</h3>
+                    <p>队长看节奏，HR 看安全，摄影记录互助瞬间，合作方看到真实内容发生。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>营地</span>
+                  <div>
+                    <h3>露营趣味承接关系</h3>
+                    <p>烧烤、小吃、音乐、聊天和团队合影，把白天的共同完成转成夜晚的关系交流。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>赛后</span>
+                  <div>
+                    <h3>回顾稿、朋友圈和合作复盘</h3>
+                    <p>活动真正的传播价值，在照片、短视频、公众号回顾和下一次团队报名里继续发生。</p>
+                  </div>
+                </article>
+            </div>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-ai-partner-mood.jpg" alt="三门越野合作方沟通与营地氛围示意">
+            <figcaption><strong>合作沟通需要一张氛围图，但不能只靠氛围图</strong><span>这张保留的氛围图适合表达合作场景：队长、负责人和合作方围绕路线、营地和队伍故事讨论。真正支撑可信度的，仍然是前面选入的历届起点、补给和完赛照片。</span></figcaption>
+          </figure>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-camp-aerial-1600.jpg" alt="三门山顶营地航拍">
+            <figcaption><strong>营地让合作触点从赛道延长到夜晚</strong><span>跑者愿意停留，品牌和文旅内容才有继续发生的空间。营地让赛事从一次出发，变成一个可以被组织和传播的周末。</span></figcaption>
+          </figure>
+          <section class="article-block station-block">
+            <h2>企业队长转老板文案，可以这样拆</h2>
+            <p class="lead">不是喊口号，而是把老板关心的信息压成三段。</p>
+            <div class="station-grid">
+              
+                <article class="station-card">
+                  <span>第一段</span>
+                  <h3>为什么做</h3>
+                  <p>年度团建需要从饭局换成共同经历，三门路线能把团队带到真实协作场景里。</p>
+                  <ul><li>共同完成</li><li>员工愿晒</li><li>内容可沉淀</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>第二段</span>
+                  <h3>怎么控风险</h3>
+                  <p>活动按 11 / 21 / 33 分层，设置队长、补给、收容、摄影、交通和返程节点。</p>
+                  <ul><li>体能分层</li><li>执行清单</li><li>正式方案确认</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>第三段</span>
+                  <h3>留下什么</h3>
+                  <p>风车、古村、山海、营地和团队合影，能转成企业文化素材、客户关系素材和下次活动样板。</p>
+                  <ul><li>照片视频</li><li>公众号回顾</li><li>团队故事</li></ul>
+                </article>
+            </div>
+          </section>
+          <section class="article-block faq-block">
+            <h2>合作前必须讲清楚的问题</h2>
             
-              <article class="station-card">
-                <span>给老板</span>
-                <h3>这不是出去玩，是团队资产</h3>
-                <p>老板需要看到投入回报：共同经历、组织协作、活动回顾、员工朋友圈和客户关系场景。</p>
-                <ul>
-                  <li>团队关系</li><li>企业文化素材</li><li>客户慢交流</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>给 HR</span>
-                <h3>不是硬拉练，是可分层执行</h3>
-                <p>HR 需要看到风险可控：11 / 21 / 33 分层、补给、收容、摄影、交通、返程都能拆成表。</p>
-                <ul>
-                  <li>体能分层</li><li>补给收容</li><li>返程节点</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>给队长</span>
-                <h3>不是拼最快，是练团队厚度</h3>
-                <p>商学院和企业队长关心的是分工、女生队员、节奏员、第六人保护和第二天状态。</p>
-                <ul>
-                  <li>队伍分工</li><li>团队协作</li><li>节奏管理</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>给合作方</span>
-                <h3>不只曝光，是文旅停留</h3>
-                <p>文旅和品牌方关心真实触点：风车、古村、营地、补给、队伍故事和赛后路线都能成为内容。</p>
-                <ul>
-                  <li>路线内容</li><li>营地停留</li><li>赛后消费</li>
-                </ul>
-              </article>
-            
-          </div>
-        </section>
-      
-        <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-team-trail-real.jpg" alt="历届赛事资料中的山路队伍画面">
-          <figcaption><strong>队伍在山路上，协作才会变具体</strong><span>会议室里很难看见谁会等同伴、谁会提醒补给、谁能把慢的人带上。路线会把这些协作细节自然暴露出来。</span></figcaption>
-        </figure>
-      
-        <section class="article-block punch-list">
-          <h2>一页纸老板版，可以这样写</h2>
-          <ul>
-            <li>目标：用三门轻越野和营地节，把年度团建从饭局升级为一次可传播的团队共同经历。</li><li>收益：员工参与意愿、团队协作训练、企业文化照片/短视频、客户或校友慢交流场景。</li><li>风控：按 11 / 21 / 33 做体能分层，提前确认健康情况、补给、收容、交通和返程。</li><li>内容：风车路线、古村风景、三门山海、营地露营、团队合影和活动回顾。</li><li>边界：费用、名额、保险、装备、交通和合作权益以正式方案逐项确认。</li>
-          </ul>
-        </section>
-      
-        <section class="article-block punch-list">
-          <h2>队长执行清单，先别等报名才做</h2>
-          <ul>
-            <li>按体能把队员分为 11 公里体验、21 公里完整路线、33 公里挑战或团队训练方向。</li><li>提前确定队长、节奏员、补给提醒、摄影记录、收尾陪同和营地集合负责人。</li><li>把风车、古村、山海和营地几个关键画面做成拍摄节点，不要只拍起终点。</li><li>如果是商学院或企业队，提前练习“照顾第六人”的团队策略，而不是只看最快的人。</li><li>提前准备队伍群文案、老板说明、一页纸预算口径和赛后回顾素材。</li>
-          </ul>
-        </section>
-      
-        <section class="article-block">
-          <h2>团队为什么来：从出发到内容沉淀</h2>
-          <p class="lead">把一场越野赛看成团队项目，就要从行前、路上、营地和赛后四段组织。</p>
-          <div class="timeline">
-            
-              <article class="timeline-item">
-                <span>行前</span>
-                <div>
-                  <h3>确定目标和分层</h3>
-                  <p>是年度团建、商学院训练、客户维护还是合作方活动？目标不同，组别、预算和交付物也不同。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>出发</span>
-                <div>
-                  <h3>古城门集合与队伍仪式</h3>
-                  <p>完成分组、合影、安全说明、补给提醒和摄影节点，先把队伍组织起来。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>路上</span>
-                <div>
-                  <h3>风车、古村、山海中的协作</h3>
-                  <p>队长看节奏，HR 看安全，摄影记录互助瞬间，合作方看到真实内容发生。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>营地</span>
-                <div>
-                  <h3>露营趣味承接关系</h3>
-                  <p>烧烤、小吃、音乐、聊天和团队合影，把白天的共同完成转成夜晚的关系交流。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>赛后</span>
-                <div>
-                  <h3>回顾稿、朋友圈和合作复盘</h3>
-                  <p>活动真正的传播价值，在照片、短视频、公众号回顾和下一次团队报名里继续发生。</p>
-                </div>
-              </article>
-            
-          </div>
-        </section>
-      
-        <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-camp-aerial-1600.jpg" alt="三门山顶营地航拍">
-          <figcaption><strong>营地让合作触点从赛道延长到夜晚</strong><span>跑者愿意停留，品牌和文旅内容才有继续发生的空间。营地让赛事从一次出发，变成一个可以被组织和传播的周末。</span></figcaption>
-        </figure>
-      
-        <section class="article-block station-block">
-          <h2>企业队长转老板文案，可以这样拆</h2>
-          <p class="lead">不是喊口号，而是把老板关心的信息压成三段。</p>
-          <div class="station-grid">
-            
-              <article class="station-card">
-                <span>第一段</span>
-                <h3>为什么做</h3>
-                <p>年度团建需要从饭局换成共同经历，三门路线能把团队带到真实协作场景里。</p>
-                <ul>
-                  <li>共同完成</li><li>员工愿晒</li><li>内容可沉淀</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>第二段</span>
-                <h3>怎么控风险</h3>
-                <p>活动按 11 / 21 / 33 分层，设置队长、补给、收容、摄影、交通和返程节点。</p>
-                <ul>
-                  <li>体能分层</li><li>执行清单</li><li>正式方案确认</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>第三段</span>
-                <h3>留下什么</h3>
-                <p>风车、古村、山海、营地和团队合影，能转成企业文化素材、客户关系素材和下次活动样板。</p>
-                <ul>
-                  <li>照片视频</li><li>公众号回顾</li><li>团队故事</li>
-                </ul>
-              </article>
-            
-          </div>
-        </section>
-      
-        <section class="article-block faq-block">
-          <h2>合作前必须讲清楚的问题</h2>
-          
-            <details>
-              <summary>企业队伍没有越野经验怎么办？</summary>
-              <p>不要按硬核竞速组织。先做体能分层，11 公里体验、21 公里完整路线、33 公里挑战分别承接不同人群，再设置补给、收容和营地参与方案。</p>
-            </details>
-          
-            <details>
-              <summary>商学院团队为什么适合提前锁定？</summary>
-              <p>团队组不是临时拼速度。队伍分工、女生队员、节奏员、第六人保护和两天恢复，都需要赛前训练和组织。</p>
-            </details>
-          
-            <details>
-              <summary>合作方最该看什么？</summary>
-              <p>看停留场景。风车、古村、补给、营地、队伍故事和赛后游玩，比单纯起终点曝光更容易被拍下和转发。</p>
-            </details>
-          
-        </section>
-      
-        <section class="article-block">
-          <h2>如果要说服负责人，别只说“风景很好”</h2>
-          <p class="lead">更有效的一句话是：这场活动能让团队一起完成一段路，并留下可传播的内容。</p>
-          <p>风景是参与理由，组织收益才是审批理由。把风车路线、古村风景、团队协作和露营趣味写进同一条逻辑链里，老板、HR、队长和合作方才会同时看懂。</p><p>也可以把这篇直接转给今年负责团建或队伍报名的人：你们需要的是一顿饭，还是一次能被团队记住、能被客户记住、能被朋友圈继续传播的周末？</p>
-        </section>
-      
+              <details>
+                <summary>企业队伍没有越野经验怎么办？</summary>
+                <p>不要按硬核竞速组织。先做体能分层，11 公里体验、21 公里完整路线、33 公里挑战分别承接不同人群，再设置补给、收容和营地参与方案。</p>
+              </details>
+              <details>
+                <summary>商学院团队为什么适合提前锁定？</summary>
+                <p>团队组不是临时拼速度。队伍分工、女生队员、节奏员、第六人保护和两天恢复，都需要赛前训练和组织。</p>
+              </details>
+              <details>
+                <summary>合作方最该看什么？</summary>
+                <p>看停留场景。风车、古村、补给、营地、队伍故事和赛后游玩，比单纯起终点曝光更容易被拍下和转发。</p>
+              </details>
+          </section>
+          <section class="article-block">
+            <h2>如果要说服负责人，别只说“风景很好”</h2>
+            <p class="lead">更有效的一句话是：这场活动能让团队一起完成一段路，并留下可传播的内容。</p>
+            <p>风景是参与理由，组织收益才是审批理由。把风车路线、古村风景、团队协作和露营趣味写进同一条逻辑链里，老板、HR、队长和合作方才会同时看懂。</p><p>也可以把这篇直接转给今年负责团建或队伍报名的人：你们需要的是一顿饭，还是一次能被团队记住、能被客户记住、能被朋友圈继续传播的周末？</p>
+          </section>
           <section id="cta" class="final-cta">
             <h2>转给队长或负责人：先拿这张团队方案清单</h2>
             <p>如果你负责企业团建、商学院队伍或文旅合作，先把这篇转给队长、HR 或老板。下一步再按人数、体能、城市、预算、合作目标和正式赛事信息，拆成一页纸老板版、队长执行清单和合作方价值清单。</p>
             <a class="secondary-action" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html">返回 3 篇入口</a>
           </section>
         </div>
-      </article>
-    </main>
-    <footer class="site-footer">2026 嗨誓三门越野赛，让企业团建、商学院训练和三门文旅在一个周末相遇。</footer>
-    
-    
-  
-
-</body></html>
+      </article></main>
+    <footer class="site-footer">2026 嗨誓三门越野赛，3 篇公众号成稿入口。历届照片来自本地赛事要素整理，氛围图用于传播想象。</footer>
+  </body>
+</html>

@@ -123,6 +123,27 @@
       `;
     }
 
+    if (block.type === "gallery") {
+      return `
+        <section class="article-block historical-gallery">
+          <h2>${escapeHtml(block.title)}</h2>
+          ${block.lead ? `<p class="lead">${escapeHtml(block.lead)}</p>` : ""}
+          <div class="historical-gallery-grid">
+            ${block.items.map((item) => `
+              <figure>
+                <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.alt || item.caption || block.title)}">
+                <figcaption>
+                  ${item.source ? `<span>${escapeHtml(item.source)}</span>` : ""}
+                  <strong>${escapeHtml(item.caption)}</strong>
+                </figcaption>
+              </figure>
+            `).join("")}
+          </div>
+          ${block.note ? `<p class="gallery-note">${escapeHtml(block.note)}</p>` : ""}
+        </section>
+      `;
+    }
+
     if (block.type === "video") {
       return `
         <section class="video-section">

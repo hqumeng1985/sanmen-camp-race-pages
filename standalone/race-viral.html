@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="zh-CN"><head>
+<html lang="zh-CN">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>别把三门越野想太硬：跑过风车古村，晚上营地碰头</title>
-    <meta name="description" content="2026 嗨誓三门越野赛报名传播版：11 / 21 / 33 三种强度，跑过风车古村和三门山海，晚上到营地等队友。">
+    <title>别把三门越野想太硬： 跑过风车古村，晚上营地碰头 | 报名传播版</title>
+    <meta name="description" content="11 / 21 / 33 三种强度，不是把所有人推上硬核赛道，而是从亭旁古城门出发，跑进风车、古村和三门山海，晚上再到营地等队友。">
     <link rel="icon" href="data:,">
-    <style data-inline="site.css">:root {
+    <style>:root {
   --paper: #fffdf7;
   --ink: #172024;
   --muted: #66706b;
@@ -147,7 +148,7 @@ a {
   content: "";
   background:
     linear-gradient(90deg, rgba(11, 22, 18, 0.88), rgba(11, 22, 18, 0.48), rgba(11, 22, 18, 0.14)),
-    url("https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/camp-aerial.jpg");
+    url("https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/camp-aerial.jpg");
   background-size: cover;
   background-position: center;
   transform: scale(1.02);
@@ -542,6 +543,60 @@ body[data-page="camp-viral"] .article-hero h1 {
   line-height: 1.7;
 }
 
+.historical-gallery {
+  padding: clamp(18px, 4vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.historical-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.historical-gallery figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--soft-line);
+  border-radius: 8px;
+  background: #101d1a;
+}
+
+.historical-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.historical-gallery figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  color: white;
+}
+
+.historical-gallery figcaption span {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.historical-gallery figcaption strong {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.gallery-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
 .video-section {
   padding: 20px;
   border-radius: 8px;
@@ -921,6 +976,10 @@ tr:last-child td {
     grid-template-columns: 1fr;
   }
 
+  .historical-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
   table {
     min-width: 620px;
   }
@@ -1005,24 +1064,21 @@ tr:last-child td {
   </head>
   <body data-page="race-viral" class="race-theme">
     <header class="topbar">
-      <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门六版本方案</span></a>
-      <nav class="nav-scroll" data-nav="" aria-label="六版本页面导航">
+      <a class="brand" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html"><span class="brand-mark">三</span><span>三门越野赛 3 篇</span></a>
+      <nav class="nav-scroll" aria-label="三门越野赛页面导航">
       <a class="nav-link active" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-viral.html">
         越野赛报名
       </a>
-    
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-stakeholder.html">
         越野赛合作
       </a>
-    
       <a class="nav-link" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/race-immersive.html">
         越野赛沉浸
-      </a>
-    </nav>
+      </a></nav>
     </header>
-    <main data-root="">
+    <main>
       <article class="wechat-article">
-        <header class="article-hero" style="--hero-image: url('https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-route-hills-1600.jpg')">
+        <header class="article-hero" style="--hero-image: url('https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-route-hills-1600.jpg')">
           <div class="article-hero-copy">
             <span class="kicker">2026 嗨誓三门越野赛 | 报名传播版</span>
             <h1>别把三门越野想太硬：
@@ -1031,11 +1087,9 @@ tr:last-child td {
             <a class="primary-action" href="#cta">转给跑友：今年 12 月，三门去不去</a>
           </div>
         </header>
-
         <section class="article-proof" aria-label="核心亮点">
           <span>不是劝退局</span><span>11 / 21 / 33 可选</span><span>风车古村可晒</span><span>营地等队友</span>
         </section>
-
         
       <section class="article-info-grid" aria-label="文章信息卡">
         
@@ -1044,27 +1098,22 @@ tr:last-child td {
             <strong>越野不只看距离</strong>
             <p>三门这场的吸引力，是风车、古村、山海和营地把一场比赛变成周末目的地。</p>
           </article>
-        
           <article class="info-card">
             <span>为什么不劝退</span>
             <strong>11 / 21 / 33 分层选择</strong>
             <p>入门体验、完整轻越野和更强挑战分开讲，普通户外爱好者也能找到入口。</p>
           </article>
-        
           <article class="info-card">
             <span>为什么会转发</span>
             <strong>跑完不急着散场</strong>
             <p>终点接上烧烤、小吃、音乐和露营社交，跑团有更多聊天和出片理由。</p>
           </article>
-        
           <article class="info-card">
             <span>为什么有记忆点</span>
             <strong>风车、古村、山海、营地</strong>
             <p>不是一张报名海报，而是一条能被拍下、走完、讲给朋友听的三门路线。</p>
           </article>
-        
       </section>
-    
         
       <section class="race-essentials" aria-label="2026 嗨誓三门越野赛基础信息">
         <h2>2026 嗨誓三门越野赛基础信息</h2>
@@ -1075,210 +1124,187 @@ tr:last-child td {
           <article><span>团队规则</span><strong>10 人一组，至少 2 名女生，女生减时，取每天第六名成绩两天相加</strong></article>
         </div>
       </section>
-    
-
         <div class="article-body">
           
-        <section class="article-block">
-          <h2>别把三门越野想太硬</h2>
-          <p class="lead">这场最容易被转发的点，不是它有多虐，而是普通跑友也能找到自己的入口。</p>
-          <p>很多人一听越野赛，脑子里先出现的是爬升、关门、强装和劝退。但三门这场不只写给硬核跑者，它把 11 / 21 / 33 三种强度拆开，让第一次尝试越野的人、半马基础稳定的人、想做长距离训练的人，都能找到自己的位置。</p><p>你可以把它当比赛，也可以把它当一次跑进山海的周末。从亭旁古城门出发，路上有风车天路、古村山路和三门山海，傍晚到枧星空营地，晚上吃点东西、坐下来聊天、等最后一个队友到。</p><p>所以这篇不是规程替代品。它更适合先转给跑友：别先问报名多少钱，先问今年 12 月，要不要一起把三门这条线留出来。</p>
-        </section>
-      
-        <section class="article-block">
-          <h2>普通越野报名页 vs 三门文旅轻越野</h2>
-          <p class="lead">跑者愿意转发，不是因为信息堆得多，而是因为一眼能看见自己为什么要去。</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr><th>普通报名页</th><th>三门文旅轻越野</th></tr>
-              </thead>
-              <tbody>
-                
-                  <tr><td>先看到距离、费用、关门和装备。</td><td>先看到 11 / 21 / 33 怎么选，以及风车、古村、山海、营地怎么串起来。</td></tr>
-                
-                  <tr><td>跑完拿包离场，故事停在终点。</td><td>跑完进入营地节，烧烤、小吃、音乐和跑友聊天继续发生。</td></tr>
-                
-                  <tr><td>图片多是海报或起终点。</td><td>图片要有路线、风车、古村、队伍协作、营地和完赛情绪。</td></tr>
-                
-                  <tr><td>只适合已经决定报名的人。</td><td>也适合转给正在犹豫的朋友，让他先被周末体验吸引。</td></tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </section>
-      
-        <section class="article-block">
-          <h2>先看你适合哪一组</h2>
-          <p class="lead">目前对外传播统一使用 11 / 21 / 33 体系；历史资料里的旧距离口径不混进正文。</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr><th>组别</th><th>体验重点</th><th>适合人群</th></tr>
-              </thead>
-              <tbody>
-                
-                  <tr><td>11 公里轻体验组</td><td>从古城门进入三门山野，重点是第一次感受路线、风车、古村和营地氛围。</td><td>第一次尝试越野、想轻量体验文旅赛事的跑者和户外爱好者。</td></tr>
-                
-                  <tr><td>21 公里初级组</td><td>完整跑向枧星空营地，路上看山海风景，抵达后接上营地节。</td><td>有半马或基础越野经验，想把比赛和露营周末结合起来的人。</td></tr>
-                
-                  <tr><td>33 公里挑战组</td><td>更完整地检验耐力、补给和节奏管理，把三门山野跑成一次扎实训练。</td><td>已有系统训练基础，想给年底留一场长距离目标的跑者。</td></tr>
-                
-                  <tr><td>团队 / 商学院方向</td><td>围绕团队协作、分工、女生减时和第六人成绩组织训练。</td><td>商学院跑团、校友会、企业家运动社群和准备组队参赛的人。</td></tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </section>
-      
-        <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-windmill-real.jpg" alt="历届赛事资料中的三门风车路线画面">
-          <figcaption><strong>风车路线，是三门最容易被转发的画面</strong><span>风车天路天然适合做首轮传播：朋友还没研究规程，先会被“这条线在哪里”吸引。报名文章要把这种目的地感放在前半段。</span></figcaption>
-        </figure>
-      
-        <section class="article-block">
-          <h2>跑进古村以后，比赛就不只是山路了</h2>
-          <p class="lead">三门的记忆点，不只在爬坡，也在路过的村、风和山海。</p>
-          <p>历届赛事资料里反复出现古村、山中古道、风车天路和特色补给。这些内容不能被塞到文末，它们应该进入前半段，因为它们回答了跑友最真实的问题：我为什么要专门去三门跑？</p><p>11 公里负责打开门槛，21 公里负责把人带到营地，33 公里负责给训练基础更强的跑者一个目标。不同距离讲的不是同一种痛苦，而是同一条文旅路线的不同打开方式。</p><p>如果你不是为了成绩而来，也可以为了风景、古村、营地和跑友一起完成一段路而来。</p>
-        </section>
-      
-        <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-village-real.jpg" alt="历届赛事资料中的古村山路画面">
-          <figcaption><strong>古村和山中古道，让路线有了地方感</strong><span>越野赛最怕只剩距离数字。古村、石墙、山路和人群经过的瞬间，会让跑者记住这是三门，而不是任意一条训练路线。</span></figcaption>
-        </figure>
-      
-        <section class="article-block">
-          <h2>一个跑者的三门周末，可以这样走</h2>
-          <p class="lead">这是传播版时间线，不替代正式规程；它负责让跑友先在脑子里完成一次出发。</p>
-          <div class="timeline">
+          <section class="article-block">
+            <h2>别把三门越野想太硬</h2>
+            <p class="lead">这场最容易被转发的点，不是它有多虐，而是普通跑友也能找到自己的入口。</p>
+            <p>很多人一听越野赛，脑子里先出现的是爬升、关门、强装和劝退。但三门这场不只写给硬核跑者，它把 11 / 21 / 33 三种强度拆开，让第一次尝试越野的人、半马基础稳定的人、想做长距离训练的人，都能找到自己的位置。</p><p>你可以把它当比赛，也可以把它当一次跑进山海的周末。从亭旁古城门出发，路上有风车天路、古村山路和三门山海，傍晚到枧星空营地，晚上吃点东西、坐下来聊天、等最后一个队友到。</p><p>所以这篇不是规程替代品。它更适合先转给跑友：别先问报名多少钱，先问今年 12 月，要不要一起把三门这条线留出来。</p>
+          </section>
+          <section class="article-block">
+            <h2>普通越野报名页 vs 三门文旅轻越野</h2>
+            <p class="lead">跑者愿意转发，不是因为信息堆得多，而是因为一眼能看见自己为什么要去。</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>普通报名页</th><th>三门文旅轻越野</th></tr></thead>
+                <tbody><tr><td>先看到距离、费用、关门和装备。</td><td>先看到 11 / 21 / 33 怎么选，以及风车、古村、山海、营地怎么串起来。</td></tr><tr><td>跑完拿包离场，故事停在终点。</td><td>跑完进入营地节，烧烤、小吃、音乐和跑友聊天继续发生。</td></tr><tr><td>图片多是海报或起终点。</td><td>图片要有路线、风车、古村、队伍协作、营地和完赛情绪。</td></tr><tr><td>只适合已经决定报名的人。</td><td>也适合转给正在犹豫的朋友，让他先被周末体验吸引。</td></tr></tbody>
+              </table>
+            </div>
+          </section>
+          <section class="article-block">
+            <h2>往年材料里最该用上的，不只是照片</h2>
+            <p class="lead">赛事要素表真正有价值的地方，是它证明三门这条线不是临时拼出来的。</p>
+            <p>2023 年资料里有原始山野、山中古道和团队接力；2024 年强化了绝美古村落、风车天路、山中古道和特色补给；2025 年把红色革命主题赛道、亭旁起终点和赛道美景放进回顾；2026 年再把 11 / 21 / 33 和星空营地接上。</p><p>所以这三篇不会把往届照片一股脑替掉现有图，而是选择起点、风车、古村、山路、补给、完赛这些能证明赛事连续性的画面。原有山海、营地和氛围图继续承担 2026 传播想象。</p>
+          </section>
+          <section class="article-block">
+            <h2>先看你适合哪一组</h2>
+            <p class="lead">目前对外传播统一使用 11 / 21 / 33 体系；历史资料里的旧距离口径不混进正文。</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>组别</th><th>体验重点</th><th>适合人群</th></tr></thead>
+                <tbody><tr><td>11 公里轻体验组</td><td>从古城门进入三门山野，重点是第一次感受路线、风车、古村和营地氛围。</td><td>第一次尝试越野、想轻量体验文旅赛事的跑者和户外爱好者。</td></tr><tr><td>21 公里初级组</td><td>完整跑向枧星空营地，路上看山海风景，抵达后接上营地节。</td><td>有半马或基础越野经验，想把比赛和露营周末结合起来的人。</td></tr><tr><td>33 公里挑战组</td><td>更完整地检验耐力、补给和节奏管理，把三门山野跑成一次扎实训练。</td><td>已有系统训练基础，想给年底留一场长距离目标的跑者。</td></tr><tr><td>团队 / 商学院方向</td><td>围绕团队协作、分工、女生减时和第六人成绩组织训练。</td><td>商学院跑团、校友会、企业家运动社群和准备组队参赛的人。</td></tr></tbody>
+              </table>
+            </div>
+          </section>
+          <section class="article-block historical-gallery">
+            <h2>先看历届照片：这不是概念路线</h2>
+            <p class="lead">用往届照片放在正文前半段，是为了先让跑友相信：风车、古村、山路和队伍感都是真实跑出来的。</p>
+            <div class="historical-gallery-grid">
+              
+                <figure>
+                  <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-2023-wind-turbines.jpg" alt="2023 嗨誓三门越野赛风车山脊回顾照片">
+                  <figcaption>
+                    <span>2023 回顾 / 风车山脊</span>
+                    <strong>风车是三门最容易被朋友截图转发的画面。</strong>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-2024-village-run.jpg" alt="2024 嗨誓三门越野赛古村跑段回顾照片">
+                  <figcaption>
+                    <span>2024 回顾 / 古村跑段</span>
+                    <strong>古村和石墙让赛事有地方感，不只是一条山路。</strong>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-2025-forest-team.jpg" alt="2025 嗨誓三门越野赛林间队伍回顾照片">
+                  <figcaption>
+                    <span>2025 回顾 / 林间队伍</span>
+                    <strong>队伍进入山路后，团队协作会比口号更具体。</strong>
+                  </figcaption>
+                </figure>
+            </div>
+            <p class="gallery-note">以上照片来自本地基础材料《嗨誓三门越野赛赛事要素整理》解包图片；页面把它们作为历届回顾素材使用，不表述为 2026 现场。</p>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-windmill-real.jpg" alt="历届赛事资料中的三门风车路线画面">
+            <figcaption><strong>风车路线，是三门最容易被转发的画面</strong><span>风车天路天然适合做首轮传播：朋友还没研究规程，先会被“这条线在哪里”吸引。报名文章要把这种目的地感放在前半段。</span></figcaption>
+          </figure>
+          <section class="article-block">
+            <h2>跑进古村以后，比赛就不只是山路了</h2>
+            <p class="lead">三门的记忆点，不只在爬坡，也在路过的村、风和山海。</p>
+            <p>历届赛事资料里反复出现古村、山中古道、风车天路和特色补给。这些内容不能被塞到文末，它们应该进入前半段，因为它们回答了跑友最真实的问题：我为什么要专门去三门跑？</p><p>11 公里负责打开门槛，21 公里负责把人带到营地，33 公里负责给训练基础更强的跑者一个目标。不同距离讲的不是同一种痛苦，而是同一条文旅路线的不同打开方式。</p><p>如果你不是为了成绩而来，也可以为了风景、古村、营地和跑友一起完成一段路而来。</p>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-village-real.jpg" alt="历届赛事资料中的古村山路画面">
+            <figcaption><strong>古村和山中古道，让路线有了地方感</strong><span>越野赛最怕只剩距离数字。古村、石墙、山路和人群经过的瞬间，会让跑者记住这是三门，而不是任意一条训练路线。</span></figcaption>
+          </figure>
+          <section class="article-block">
+            <h2>一个跑者的三门周末，可以这样走</h2>
+            <p class="lead">这是传播版时间线，不替代正式规程；它负责让跑友先在脑子里完成一次出发。</p>
+            <div class="timeline">
+              
+                <article class="timeline-item">
+                  <span>赛前</span>
+                  <div>
+                    <h3>先选组别，再找同伴</h3>
+                    <p>11 看体验，21 看完整抵达，33 看训练强度；跑团可以先按能力分组，别等报名开放才临时拉人。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>出发</span>
+                  <div>
+                    <h3>亭旁古城门集合</h3>
+                    <p>起点有仪式感，也方便把城市入口、古镇记忆和赛事故事连起来。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>路上</span>
+                  <div>
+                    <h3>风车、古村、山海一路接上</h3>
+                    <p>这段不是纯粹赶路，适合小队互相等、互相拍、互相提醒补给。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>抵达</span>
+                  <div>
+                    <h3>跑向枧星空营地</h3>
+                    <p>21 公里和相关团队路线的关键情绪点，是从赛道进入营地，而不是跑完就散。</p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span>夜晚</span>
+                  <div>
+                    <h3>烧烤、小吃、音乐和露营社交</h3>
+                    <p>跑团可以在这里恢复、聊天、拍照，把一场比赛延长成一个周末。</p>
+                  </div>
+                </article>
+            </div>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-camp-lawn-1600.jpg" alt="三门山顶营地和露营舱">
+            <figcaption><strong>跑完不急着走，营地把终点变成社交场</strong><span>营地不是背景板，而是这场赛事区别于普通报名页的关键：它让跑者、跑团和朋友有理由留下来。</span></figcaption>
+          </figure>
+          <section class="article-block station-block">
+            <h2>跑友朋友圈素材包，直接拿去发</h2>
+            <p class="lead">不是假装真实评价，而是赛前预热和跑友转发可以准备的文案方向。</p>
+            <div class="station-grid">
+              
+                <article class="station-card">
+                  <span>跑友朋友圈</span>
+                  <h3>这场不是跑完就散</h3>
+                  <p>适合配风车、古村、山路或营地图。</p>
+                  <ul><li>年底想留一场有风景的越野。</li><li>11 / 21 / 33 可以按状态选。</li><li>跑完还能进营地，等队友一起吃点东西。</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>跑团群</span>
+                  <h3>先别问谁 PB，先问谁想去三门</h3>
+                  <p>适合队长发群里收集意向。</p>
+                  <ul><li>入门的人看 11。</li><li>半马基础稳定的人看 21。</li><li>想练强度的人看 33。</li></ul>
+                </article>
+                <article class="station-card">
+                  <span>短视频开头</span>
+                  <h3>3 秒先给画面</h3>
+                  <p>适合做公众号首图下方短视频或朋友圈视频标题。</p>
+                  <ul><li>从古城门出发。</li><li>跑过风车和古村。</li><li>晚上在营地等队友。</li></ul>
+                </article>
+            </div>
+          </section>
+          <figure class="article-figure">
+            <img src="https://hqumeng1985.github.io/sanmen-camp-race-pages/assets/race-ai-finish-mood.jpg" alt="三门越野完赛与营地氛围示意">
+            <figcaption><strong>氛围图负责想象，历届照片负责证明</strong><span>这类保留的氛围图适合承接转发动机：让跑友先想象跑完以后还能在营地碰头。前面的 2023 / 2024 / 2025 照片负责证明赛事真实发生过，二者不要混用成同一种证据。</span></figcaption>
+          </figure>
+          <section class="article-block punch-list">
+            <h2>这篇适合转给谁</h2>
+            <ul><li>转给第一次想试越野的朋友：先看 11 公里轻体验。</li><li>转给半马基础稳定、想跑到营地的人：重点看 21 公里。</li><li>转给每周有长距离训练的跑友：把 33 公里当成年底目标。</li><li>转给跑团队长：先按能力分组，再讨论交通、住宿和赛后营地。</li><li>转给想把比赛当周末旅行的人：风车、古村、山海和营地才是完整体验。</li></ul>
+          </section>
+          <section class="article-block faq-block">
+            <h2>跑者最关心的几个问题</h2>
             
-              <article class="timeline-item">
-                <span>赛前</span>
-                <div>
-                  <h3>先选组别，再找同伴</h3>
-                  <p>11 看体验，21 看完整抵达，33 看训练强度；跑团可以先按能力分组，别等报名开放才临时拉人。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>出发</span>
-                <div>
-                  <h3>亭旁古城门集合</h3>
-                  <p>起点有仪式感，也方便把城市入口、古镇记忆和赛事故事连起来。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>路上</span>
-                <div>
-                  <h3>风车、古村、山海一路接上</h3>
-                  <p>这段不是纯粹赶路，适合小队互相等、互相拍、互相提醒补给。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>抵达</span>
-                <div>
-                  <h3>跑向枧星空营地</h3>
-                  <p>21 公里和相关团队路线的关键情绪点，是从赛道进入营地，而不是跑完就散。</p>
-                </div>
-              </article>
-            
-              <article class="timeline-item">
-                <span>夜晚</span>
-                <div>
-                  <h3>烧烤、小吃、音乐和露营社交</h3>
-                  <p>跑团可以在这里恢复、聊天、拍照，把一场比赛延长成一个周末。</p>
-                </div>
-              </article>
-            
-          </div>
-        </section>
-      
-        <figure class="article-figure">
-          <img src="https://raw.githubusercontent.com/hqumeng1985/sanmen-camp-race-pages/main/assets/race-camp-lawn-1600.jpg" alt="三门山顶营地和露营舱">
-          <figcaption><strong>跑完不急着走，营地把终点变成社交场</strong><span>营地不是背景板，而是这场赛事区别于普通报名页的关键：它让跑者、跑团和朋友有理由留下来。</span></figcaption>
-        </figure>
-      
-        <section class="article-block station-block">
-          <h2>跑友朋友圈素材包，直接拿去发</h2>
-          <p class="lead">不是假装真实评价，而是赛前预热和跑友转发可以准备的文案方向。</p>
-          <div class="station-grid">
-            
-              <article class="station-card">
-                <span>跑友朋友圈</span>
-                <h3>这场不是跑完就散</h3>
-                <p>适合配风车、古村、山路或营地图。</p>
-                <ul>
-                  <li>年底想留一场有风景的越野。</li><li>11 / 21 / 33 可以按状态选。</li><li>跑完还能进营地，等队友一起吃点东西。</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>跑团群</span>
-                <h3>先别问谁 PB，先问谁想去三门</h3>
-                <p>适合队长发群里收集意向。</p>
-                <ul>
-                  <li>入门的人看 11。</li><li>半马基础稳定的人看 21。</li><li>想练强度的人看 33。</li>
-                </ul>
-              </article>
-            
-              <article class="station-card">
-                <span>短视频开头</span>
-                <h3>3 秒先给画面</h3>
-                <p>适合做公众号首图下方短视频或朋友圈视频标题。</p>
-                <ul>
-                  <li>从古城门出发。</li><li>跑过风车和古村。</li><li>晚上在营地等队友。</li>
-                </ul>
-              </article>
-            
-          </div>
-        </section>
-      
-        <section class="article-block punch-list">
-          <h2>这篇适合转给谁</h2>
-          <ul>
-            <li>转给第一次想试越野的朋友：先看 11 公里轻体验。</li><li>转给半马基础稳定、想跑到营地的人：重点看 21 公里。</li><li>转给每周有长距离训练的跑友：把 33 公里当成年底目标。</li><li>转给跑团队长：先按能力分组，再讨论交通、住宿和赛后营地。</li><li>转给想把比赛当周末旅行的人：风车、古村、山海和营地才是完整体验。</li>
-          </ul>
-        </section>
-      
-        <section class="article-block faq-block">
-          <h2>跑者最关心的几个问题</h2>
-          
-            <details>
-              <summary>没有越野经验能不能来？</summary>
-              <p>可以先看 11 公里轻体验组。它适合把门槛放低，先感受三门路线和赛事氛围。正式报名时仍要按官方规程确认年龄、装备、健康和关门要求。</p>
-            </details>
-          
-            <details>
-              <summary>21 公里和 33 公里怎么选？</summary>
-              <p>21 更适合有半马基础、想完整跑到营地的人；33 更适合已经有系统训练、能管理补给和节奏的人。别只看距离，要看你想要体验还是挑战。</p>
-            </details>
-          
-            <details>
-              <summary>这场最值得期待的不是成绩，那是什么？</summary>
-              <p>是路线和停留：风车、古村、山海、营地、烧烤、小吃和跑友一起把周末留住。</p>
-            </details>
-          
-        </section>
-      
-        <section class="article-block">
-          <h2>发到跑团群，就问这一句</h2>
-          <p class="lead">今年 12 月，我们是轻松看风景，还是认真练一场？</p>
-          <p>这个问题比“谁报名”更有用。有人适合 11，有人适合 21，有人想试 33。只要组别分清楚，三门这场就不会变成单一强度的劝退局。</p><p>跑友之间最容易成行的活动，往往不是最硬的那场，而是每个人都能在里面找到自己的位置。三门不只是比赛，也是一条能停留、能拍照、能把周末讲给朋友听的目的地路线。</p>
-        </section>
-      
+              <details>
+                <summary>没有越野经验能不能来？</summary>
+                <p>可以先看 11 公里轻体验组。它适合把门槛放低，先感受三门路线和赛事氛围。正式报名时仍要按官方规程确认年龄、装备、健康和关门要求。</p>
+              </details>
+              <details>
+                <summary>21 公里和 33 公里怎么选？</summary>
+                <p>21 更适合有半马基础、想完整跑到营地的人；33 更适合已经有系统训练、能管理补给和节奏的人。别只看距离，要看你想要体验还是挑战。</p>
+              </details>
+              <details>
+                <summary>这场最值得期待的不是成绩，那是什么？</summary>
+                <p>是路线和停留：风车、古村、山海、营地、烧烤、小吃和跑友一起把周末留住。</p>
+              </details>
+          </section>
+          <section class="article-block">
+            <h2>发到跑团群，就问这一句</h2>
+            <p class="lead">今年 12 月，我们是轻松看风景，还是认真练一场？</p>
+            <p>这个问题比“谁报名”更有用。有人适合 11，有人适合 21，有人想试 33。只要组别分清楚，三门这场就不会变成单一强度的劝退局。</p><p>跑友之间最容易成行的活动，往往不是最硬的那场，而是每个人都能在里面找到自己的位置。三门不只是比赛，也是一条能停留、能拍照、能把周末讲给朋友听的目的地路线。</p>
+          </section>
           <section id="cta" class="final-cta">
             <h2>转给跑友：今年 12 月，三门去不去</h2>
             <p>把这篇发到跑团群，不用先问谁报名，先问一句：今年 12 月，我们是轻松看风景，还是认真练一场？等大家按 11 / 21 / 33 找到自己的位置，再继续确认交通、住宿、装备和正式报名信息。</p>
             <a class="secondary-action" href="https://hqumeng1985.github.io/sanmen-camp-race-pages/standalone/index.html">返回 3 篇入口</a>
           </section>
         </div>
-      </article>
-    </main>
-    <footer class="site-footer">2026 嗨誓三门越野赛，把风车、古村、山海和营地连成一个周末。</footer>
-    
-    
-  
-
-</body></html>
+      </article></main>
+    <footer class="site-footer">2026 嗨誓三门越野赛，3 篇公众号成稿入口。历届照片来自本地赛事要素整理，氛围图用于传播想象。</footer>
+  </body>
+</html>
