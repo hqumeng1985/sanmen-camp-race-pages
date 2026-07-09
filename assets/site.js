@@ -148,10 +148,11 @@
     }
 
     if (block.type === "video") {
+      const poster = block.poster ? ` poster="${escapeHtml(block.poster)}"` : "";
       return `
         <section class="video-section">
           <h2>${escapeHtml(block.title)}</h2>
-          <video controls preload="metadata" src="${escapeHtml(block.src)}"></video>
+          <video controls playsinline preload="none"${poster} src="${escapeHtml(block.src)}"></video>
           ${block.caption ? `<p>${escapeHtml(block.caption)}</p>` : ""}
         </section>
       `;

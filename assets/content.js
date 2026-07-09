@@ -14,7 +14,7 @@ window.SANMEN_SITE = {
       "mediaImage": "assets/race-2023-wind-turbines.jpg",
       "mediaAlt": "历届嗨誓三门越野赛风车山脊回顾",
       "cta": "发到跑团群：今年三门，你选 11、21，还是 33？",
-      "summary": "给跑者看的公众号成稿：用商业三阶解释一场越野赛为什么值得报名、组队和转发。",
+      "summary": "给跑者看的版本：用商业三阶解释一场越野赛为什么值得报名、组队和转发。",
       "closing": "如果你已经开始在心里选组别，就发到跑团群。别急着问谁最快，先问一句：今年三门，我们有人跑 11，有人跑 21，有人冲 33 吗？",
       "proof": [
         "自我管理",
@@ -59,6 +59,7 @@ window.SANMEN_SITE = {
           "type": "video",
           "title": "先看 24 秒：跑友为什么会想去三门",
           "src": "assets/videos/race-viral-runner-video.mp4",
+          "poster": "assets/race-ai-commercial-steps-runner-hero.jpg",
           "caption": "风车、山路、队友和终点先动起来。看完这 24 秒，再决定今年三门要不要约。"
         },
         {
@@ -242,7 +243,7 @@ window.SANMEN_SITE = {
       "mediaImage": "assets/race-2025-gate-start.jpg",
       "mediaAlt": "历届嗨誓三门越野赛亭旁古城门起点",
       "cta": "发给队长：这次拼最快的人，还是保护第六个人？",
-      "summary": "给商学院和企业队伍看的公众号成稿：把越野赛写成一场商业三阶训练。",
+      "summary": "给商学院和企业队伍看的版本：把越野赛写成一场商业三阶训练。",
       "closing": "如果你在商学院、校友会或企业队伍里，就发给队长。三门这场最值得讨论的不是谁最快，而是：我们能不能把第六个人也带回来？",
       "proof": [
         "自我管理",
@@ -287,6 +288,7 @@ window.SANMEN_SITE = {
           "type": "video",
           "title": "先看 24 秒：商学院队伍为什么要跑三门",
           "src": "assets/videos/race-stakeholder-team-video.mp4",
+          "poster": "assets/race-ai-commercial-steps-team-hero.jpg",
           "caption": "一支队伍从出发、补给、保护第六人到赛后复盘，商业三阶不再停在课堂里。"
         },
         {
@@ -470,7 +472,7 @@ window.SANMEN_SITE = {
       "mediaImage": "assets/race-2024-stone-lane.jpg",
       "mediaAlt": "历届嗨誓三门越野赛古村石巷回顾",
       "cta": "发给想一起去的人：如果今年只留一个户外周末，三门算不算？",
-      "summary": "给户外自然受众看的公众号成稿：用山海叙事和商业三阶讲三门越野的周末价值。",
+      "summary": "给户外自然受众看的版本：用山海叙事和商业三阶讲三门越野的周末价值。",
       "closing": "如果你读到这里，已经能想象风车、古村、山路和终点灯光，就发给想一起去的人。先不用急着决定跑多远，先问：如果今年只留一个户外周末，三门算不算？",
       "proof": [
         "古城门出发",
@@ -515,6 +517,7 @@ window.SANMEN_SITE = {
           "type": "video",
           "title": "先看 24 秒：风车、古村、山海和终点",
           "src": "assets/videos/race-immersive-nature-video.mp4",
+          "poster": "assets/race-ai-commercial-steps-nature-hero.jpg",
           "caption": "把冬天的三门先看一遍：古城门、石巷、风车、补给和终点连成一条路。"
         },
         {
